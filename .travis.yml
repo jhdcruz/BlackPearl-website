@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-  - "10"
+  - "12"
 
-cache: yarn
+cache: npm
 
 install:
-  - yarn i
+  - npm ci
 
 script:
-  - yarn run lint
-  - yarn run build
+  - npm run lint
+  - npm run build
