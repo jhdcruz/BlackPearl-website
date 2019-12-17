@@ -11,7 +11,6 @@ export default () => (
         About us - BlackPearl in your Area! | Home of the Bubble Tea Shop in
         Bacoor, Cavite
       </title>
-      <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <Nav />

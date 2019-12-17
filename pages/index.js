@@ -1,18 +1,17 @@
 import React from "react";
-import Head from "next/head";
 
 // * Components Import
-import Nav from "../components/nav";
+import Fonts from "../components/fonts";
+import Home from "./home";
 
-export default () => (
-  <div>
-    <Head>
-      <title>
-        BlackPearl in your Area! | Home of the Bubble Tea Shop in Bacoor, Cavite
-      </title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+class Index extends React.Component {
+  componentDidMount() {
+    Fonts();
+  }
 
-    <Nav />
-  </div>
-);
+  render() {
+    return <Home />;
+  }
+}
+
+export default Index;

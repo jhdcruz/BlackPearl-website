@@ -1,60 +1,62 @@
 import React from "react";
-import Link from "next/link";
-import styled, { createGlobalStyle } from "styled-components";
+
+import Navbar from "react-bulma-components/lib/components/navbar";
+import { createGlobalStyle } from "styled-components";
 
 // * Styles
-const NavBody = createGlobalStyle`
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-    Helvetica, sans-serif;
-  }
+const NavStyle = createGlobalStyle`
   nav {
-    text-align: center;
+    margin:0;
+    padding: 0;
   }
-  ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  nav > ul {
-    padding: 4px 16px;
-  }
-  li {
-    display: flex;
-    padding: 6px 8px;
-  }
+
   a {
-    color: #067df7;
+    color: whitesmoke;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 18px;
+
+    :hover {
+      color: #E06ED7 !important;
+    }
+    &.active {
+      color: #FF7DF4 !important;
+    }
   }
 `;
 
 // * Routes
 const links = [
-  { href: "https://zeit.co/now", label: "ZEIT" },
-  { href: "https://github.com/zeit/next.js", label: "GitHub" }
+  { href: "/menu", label: "Our Menu" },
+  { href: "/about", label: "About Us" }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
 });
 
 const Nav = () => (
-  <nav>
-    <NavBody />
-    <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
-        </li>
-      ))}
-    </ul>
-  </nav>
+  <Navbar transparent={true}>
+    <NavStyle />
+    <Navbar.Brand>
+      <Navbar.Item renderAs="a" href="/">
+        <img
+          src="/brand.svg"
+          alt="BlackPearl | Home of the Bubble Tea Shop in Bacoor"
+          width="auto"
+          height="auto"
+        />
+      </Navbar.Item>
+      <Navbar.Burger />
+    </Navbar.Brand>
+    <Navbar.Menu>
+      <Navbar.Container position="end">
+        {links.map(({ key, href, label }) => (
+          <Navbar.Item href={href} key={key}>
+            {label}
+          </Navbar.Item>
+        ))}
+      </Navbar.Container>
+    </Navbar.Menu>
+  </Navbar>
 );
 
 export default Nav;
