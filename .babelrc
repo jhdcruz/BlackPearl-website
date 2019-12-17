@@ -1,11 +1,18 @@
 {
-  "presets": ["next/babel"],
-  "plugins": [
+  "presets": [
     [
-      "styled-components",
+      "@babel/preset-env",
       {
-        "ssr": true
+        "targets": {
+          "node": "current"
+        }
       }
-    ]
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "react-hot-loader/babel",
+    "babel-plugin-styled-components"
   ]
 }
