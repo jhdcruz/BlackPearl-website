@@ -8,18 +8,16 @@ const NavStyle = createGlobalStyle`
   nav {
     margin:0;
     padding: 0;
+    background-color: transparent !important;
   }
 
   a {
-    color: whitesmoke;
+    color: #ff80a2 !important;
     text-decoration: none;
     font-size: 18px;
 
     :hover {
-      color: #E06ED7 !important;
-    }
-    &.active {
-      color: #FF7DF4 !important;
+      color: #E0708E !important;
     }
   }
 `;
@@ -56,7 +54,7 @@ class Nav extends Component {
           <Navbar.Item renderAs="a" href="/">
             <img
               src="/brand.svg"
-              alt="BlackPearl | Home of the Bubble Tea Shop in Bacoor"
+              alt="BlackPearl | Index of the Bubble Tea Shop in Bacoor"
               width="auto"
               height="auto"
             />
