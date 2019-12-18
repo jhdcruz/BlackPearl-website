@@ -1,17 +1,22 @@
 import React from "react";
-
+import Head from "next/head";
 // * Components Import
-import Fonts from "../components/fonts";
-import Home from "./home";
+import BgParticles from "../components/bgParticles";
+import Nav from "../components/nav";
 
-class Index extends React.Component {
-  componentDidMount() {
-    Fonts();
-  }
+export default function Index() {
+  return (
+    <div>
+      <Head>
+        <title>
+          BlackPearl in your Area! | Home of the Bubble Tea Shop in Bacoor,
+          Cavite
+        </title>
+        <link rel="icon" href="/icon.png" />
+      </Head>
 
-  render() {
-    return <Home />;
-  }
+      <BgParticles />
+      <Nav />
+    </div>
+  );
 }
-
-export default Index;
