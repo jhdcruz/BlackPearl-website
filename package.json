@@ -6,7 +6,8 @@
     "lint": "prettier \"pages/**/**.js\" \"components/**/**.js\" --write && eslint \"pages/**/**.js\" \"components/**/**.js\" && stylelint \"pages/**/**.js\" \"components/**/**.js\"",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "npm run build && next export"
   },
   "dependencies": {
     "fontfaceobserver": "2.1.0",
