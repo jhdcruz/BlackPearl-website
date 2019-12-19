@@ -9,6 +9,7 @@ const NavStyle = createGlobalStyle`
     margin:0;
     padding: 0;
     background-color: transparent !important;
+    z-index: 2;
   }
 
   a {

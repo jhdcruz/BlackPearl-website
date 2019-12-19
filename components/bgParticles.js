@@ -11,13 +11,18 @@ canvas,
     left: 0;
     opacity: 0.85;
     overflow: hidden !important;
-    z-index: 0;
+    z-index: 1;
   }
 `;
 
 class BgParticles extends Component {
   render() {
-    return <Particles params={particlesData} canvasClassName="particle-bg" />;
+    return (
+      <>
+        <ParticleTheme />
+        <Particles params={particlesData} canvasClassName="particle-bg" />
+      </>
+    );
   }
 }
 
