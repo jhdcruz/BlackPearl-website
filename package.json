@@ -1,5 +1,5 @@
 {
-  "name": "blackpearl",
+  "name": "blackpearl-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export"
+    "export": "npm run build && next export -o build"
   },
   "dependencies": {
     "fontfaceobserver": "2.1.0",
@@ -40,5 +40,22 @@
     "stylelint-custom-processor-loader": "0.6.0",
     "stylelint-prettier": "1.1.2",
     "stylelint-processor-styled-components": "1.9.0"
-  }
+  },
+  "keywords": [
+    "Blackpearl",
+    "Blackpearl in your area",
+    "Bubble Tea",
+    "Milktea",
+    "Philippines",
+    "Bacoor",
+    "Cavite"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhdcruz/BlackPearl-website/"
+  },
+  "bugs": {
+    "url": "https://github.com/jhdcruz/BlackPearl-website/issues"
+  },
+  "homepage": "https://blackpearl.now.sh"
 }
