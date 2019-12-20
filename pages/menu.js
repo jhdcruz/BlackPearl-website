@@ -6,12 +6,6 @@ import Nav from "../components/nav";
 import BgParticles from "../components/bgParticles";
 import MenuList from "../components/menuList";
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: #222222;
-  }
-`;
-
 export default function Home() {
   return (
     <div>
@@ -22,7 +16,6 @@ export default function Home() {
         </title>
       </Head>
 
-      <GlobalStyle />
       <BgParticles />
       <Nav />
       <MenuList />
