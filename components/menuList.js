@@ -1,11 +1,25 @@
 import React from "react";
 import Table from "react-bulma-components/lib/components/table";
 import MenuData from "./data/menu.data";
+import { createGlobalStyle } from "styled-components";
+
+const MenuStyle = createGlobalStyle`
+  table,
+   tr,
+   td,
+   th {
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+  }
+`;
 
 // Menu for Milktea
 function MilkteaMenu() {
   return (
     <Table>
+      <MenuStyle />
       <thead>
         <tr>
           <th>MilkTea</th>
@@ -54,7 +68,7 @@ function SinkersMenu() {
         {MenuData.menus.Sinkers.map(sinker => (
           <tr key={sinker.id}>
             <th>{sinker.title}</th>
-            <td>{sinker.p}</td>
+            <td>{sinker.price}</td>
           </tr>
         ))}
       </tbody>
