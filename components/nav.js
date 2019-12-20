@@ -8,7 +8,8 @@ const NavStyle = createGlobalStyle`
   nav {
     margin:0;
     padding: 0;
-    background-color: #222222 !important;
+    background-color: #262626 !important;
+    opacity: 0.9;
     z-index: 2;
   }
 
