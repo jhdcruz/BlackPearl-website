@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components";
 // * Components Import
 import Nav from "../components/nav";
 import BgParticles from "../components/bgParticles";
+import MenuList from "../components/menuList";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -24,6 +25,7 @@ export default function Home() {
       <GlobalStyle />
       <BgParticles />
       <Nav />
+      <MenuList />
     </div>
   );
 }
