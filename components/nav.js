@@ -8,7 +8,7 @@ const NavStyle = createGlobalStyle`
   nav {
     margin:0;
     padding: 0;
-    background-color: transparent !important;
+    background-color: #222222 !important;
     z-index: 2;
   }
 
