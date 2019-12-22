@@ -22,7 +22,7 @@ module.exports = merge(common, {
       meta: [
         {
           name: "description",
-          content: "Front-End Web Developer, Open-Source Enthusiast."
+          content: "Home of the Bubble Tea Shop in Bacoor, Cavite, Philippines."
         },
         {
           name: "owner",
