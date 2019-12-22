@@ -64,11 +64,13 @@ export default function Introduction() {
             page="/menu"
             theme="button is-outlined"
             name="Our Menu"
+            icon="far fa-list-alt"
           />
           <OutlineButton
             page="/about"
             theme="button is-outlined"
             name="Our Story"
+            icon="fas fa-user-friends"
           />
         </ButtonGroup>
       </div>
