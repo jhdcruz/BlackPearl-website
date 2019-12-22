@@ -11,7 +11,7 @@ module.exports = merge(common, {
       hash: true,
       template: require("html-webpack-template"),
       title:
-        "BlackPearl in your Area! | Home of the Bubble Tea Shop in Bacoor, Cavite",
+        "BlackPearl in your Area! | Home of the BestBubble Tea Shop in Bacoor, Cavite",
       favicon: "./src/shared/img/icon.png",
       appMountId: "root",
       mobile: true,
@@ -20,7 +20,8 @@ module.exports = merge(common, {
       meta: [
         {
           name: "description",
-          content: "Home of the Bubble Tea Shop in Bacoor, Cavite, Philippines."
+          content:
+            "Home of the Best Bubble Tea Shop in Bacoor, Cavite, Philippines."
         },
         {
           name: "owner",
