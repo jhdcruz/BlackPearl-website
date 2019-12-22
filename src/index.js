@@ -59,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
       50% 50%,
       580,
       from(#333),
-      to(rgba(250, 250, 250, 0.3))
+      to(rgba(242, 242, 242, 0.3))
     );
   }
 `;
