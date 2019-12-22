@@ -72,7 +72,7 @@ export default function Nav() {
 
       {/* Actual Nav */}
       <NavCenter className="navbar-menu">
-        <PageLink page="/projects" theme="navbar-item" name="Projects" />
+        <PageLink page="/menu" theme="navbar-item" name="Menu" />
         <PageLink page="/" theme="navbar-item" name="Home" />
         <PageLink page="/about" theme="navbar-item" name="About" />
       </NavCenter>
