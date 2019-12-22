@@ -1,8 +1,8 @@
 {
-  "name": "jhdcruz.github.io-v2",
-  "version": "0.4.0",
+  "name": "blackpearl-website",
+  "version": "0.1.0",
   "license": "MIT",
-  "author": "Aegir Aideron <jhdcruz@vivaldi.net>",
+  "author": "Joshua Hero Dela Cruz <jhdcruz@vivaldi.net>",
   "private": true,
   "scripts": {
     "lint": "prettier \"src/**/**/*.{html,scss,js,jsx}\" --write && eslint \"src/**/**/*.{js,jsx}\" && stylelint ./src/**/**/*.js",
@@ -74,10 +74,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhdcruz/jhdcruz.github.io-v2/"
+    "url": "https://github.com/jhdcruz/BlackPearl-website/"
   },
   "bugs": {
-    "url": "https://github.com/jhdcruz/jhdcruz.github.io-v2/issues"
+    "url": "https://github.com/jhdcruz/BlackPearl-website/issues"
   },
-  "homepage": "https://jhdcruz.now.sh"
+  "homepage": "https://blackpearl.now.sh"
 }
