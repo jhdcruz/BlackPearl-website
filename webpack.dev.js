@@ -22,7 +22,8 @@ module.exports = merge(common, {
       meta: [
         {
           name: "description",
-          content: "Home of the Best Bubble Tea Shop in Bacoor, Cavite, Philippines."
+          content:
+            "Home of the Best Bubble Tea Shop in Bacoor, Cavite, Philippines."
         },
         {
           name: "owner",
