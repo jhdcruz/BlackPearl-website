@@ -18,13 +18,14 @@ const Title = styled.h3`
   font-weight: bold;
   color: whitesmoke;
   text-transform: uppercase;
-  font-size: 51px;
+  font-size: 58px;
   line-height: 1.1;
 `;
 
 const Subtitle = styled.h6`
   color: #e4e4e4 !important;
   font-weight: 400;
+  font-size: 1.4rem !important;
   margin: 4.5px 0 16px 0;
 `;
 

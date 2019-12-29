@@ -5,8 +5,22 @@ import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import MenuData from "./data/menu.data";
 
 const ContentWrapper = styled.div`
-  margin: 3vh auto;
+  margin: 3vh auto !important;
   padding: 1rem 3rem;
+`;
+
+const Tables = styled.div`
+  margin: 0 auto !important;
+
+  table {
+    margin: 0 1.2rem !important;
+    padding: 0 auto !important;
+  }
+`;
+
+const Caption = styled.h6`
+  text-align: center;
+  font-size: 20px;
 `;
 
 /*
@@ -51,12 +65,12 @@ function MilkteaMenu() {
 // Menu for Sinkers
 function SinkersMenu() {
   return (
-    <table className="table">
+    <table className="table is-bordered">
       <thead>
         <tr>
           <th>Sinkers</th>
           <th>
-            <abbr title="Small">Price</abbr>
+            <abbr title="Price">Price</abbr>
           </th>
         </tr>
       </thead>
@@ -76,7 +90,7 @@ function SinkersMenu() {
 function CoolersMenu() {
   return (
     <>
-      <table className="table">
+      <table className="table is-bordered">
         <thead>
           <tr>
             <th>Coolers</th>
@@ -105,9 +119,12 @@ function CoolersMenu() {
 export default function Menu() {
   return (
     <ContentWrapper className="hero-body">
-      <MilkteaMenu />
-      <SinkersMenu />
-      <CoolersMenu />
+      <Tables className="columns">
+        <MilkteaMenu className="column" />
+        <SinkersMenu className="column" />
+        <CoolersMenu />
+      </Tables>
+      <Caption>Prices are listed in Php. (&#8369;)</Caption>
     </ContentWrapper>
   );
 }
