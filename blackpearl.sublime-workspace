@@ -114,8 +114,8 @@
 						"selection":
 						[
 							[
-								1279,
-								1279
+								515,
+								515
 							]
 						],
 						"settings":
@@ -126,7 +126,7 @@
 							"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 732.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
