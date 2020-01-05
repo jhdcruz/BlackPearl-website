@@ -24,7 +24,7 @@ Home of the Bubble Tea Shop in Bacoor, Cavite.
 
 **Packages:**
 
-- [`React.js`](https://reactjs.org) *(Manual Setup)*
+- [`React.js`](https://reactjs.org) _(Manual Setup)_
 - [`styled-components`](https://www.styled-components.com/)
 - [`react-bulma-components`](https://github.com/couds/react-bulma-components)
 - [`react-particles-js`](https://www.npmjs.com/package/react-particles-js)
