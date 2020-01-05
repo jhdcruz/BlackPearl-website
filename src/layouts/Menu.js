@@ -1,29 +1,50 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import MenuData from "./data/menu.data";
 
+const HeroBody = createGlobalStyle`
+  .hero-body {
+    padding: 0 1.5rem !important;
+  }
+`;
+
 const ContentWrapper = styled.div`
-  margin: 1.5vh auto !important;
-  padding: 1rem 3rem;
+  margin: 0 auto;
 `;
 
 const Tables = styled.div`
-  margin: 0 auto !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
 
   table {
-    margin: 0 auto !important;
+    margin: 10px 5px !important;
   }
+`;
 
-  .combined-table {
-    display: block !important;
+const MilkteaTable = styled.div`
+  margin: 0 !important;
+`;
+
+const AddOnTable = styled.div`
+  table {
+    display: compact;
+    width: 13rem;
   }
 `;
 
 const Caption = styled.h6`
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
+  margin: 10px 5px;
+  padding: 2px;
+  font-weight: 500;
+  color: #f4f4f4;
+  background-color: rgba(50, 50, 50, 0.9);
+  border-radius: 3px;
 `;
 
 /*
@@ -32,7 +53,7 @@ const Caption = styled.h6`
  */
 function MilkteaMenu() {
   return (
-    <div className="column">
+    <MilkteaTable>
       <table className="table is-bordered">
         <thead>
           <tr>
@@ -63,15 +84,15 @@ function MilkteaMenu() {
           ))}
         </tbody>
       </table>
-    </div>
+    </MilkteaTable>
   );
 }
 
 function AddOn() {
   return (
-    <div className="column combined-table">
+    <AddOnTable>
       {/* Table for Sinkers Menu */}
-      <table className="table is-bordered column">
+      <table className="table is-bordered">
         <thead>
           <tr>
             <th>Sinkers</th>
@@ -90,7 +111,7 @@ function AddOn() {
         </tbody>
       </table>
       {/* Table for Coolers Menu */}
-      <table className="table is-bordered column">
+      <table className="table is-bordered">
         <thead>
           <tr>
             <th>Coolers</th>
@@ -112,18 +133,19 @@ function AddOn() {
           ))}
         </tbody>
       </table>
-    </div>
+      <Caption>Prices are listed in Php. (&#8369;)</Caption>
+    </AddOnTable>
   );
 }
 
 export default function Menu() {
   return (
     <ContentWrapper className="hero-body">
-      <Tables className="columns is-gapless">
+      <HeroBody />
+      <Tables>
         <MilkteaMenu />
         <AddOn />
       </Tables>
-      <Caption>Prices are listed in Php. (&#8369;)</Caption>
     </ContentWrapper>
   );
 }
