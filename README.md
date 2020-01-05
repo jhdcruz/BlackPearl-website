@@ -42,8 +42,6 @@ Home of the Bubble Tea Shop in Bacoor, Cavite.
 - **`WhiteSource Bolt`** - Dependencies Vulnerability Watcher
 - **`Renovate`** - Dependencies Updates
 
----
-
 ## License
 
 This work is licensed under [MIT License](/LICENSE.txt).
