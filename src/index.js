@@ -26,6 +26,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  .hero-body {
+    padding: 0 1.5rem !important;
+  }
+
   .button {
     margin: 3px 6px auto 0;
     padding: 0.8em;
