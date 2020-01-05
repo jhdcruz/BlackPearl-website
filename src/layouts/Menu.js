@@ -1,14 +1,8 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import MenuData from "./data/menu.data";
-
-const HeroBody = createGlobalStyle`
-  .hero-body {
-    padding: 0 1.5rem !important;
-  }
-`;
 
 const ContentWrapper = styled.div`
   margin: 0 auto;
@@ -141,7 +135,6 @@ function AddOn() {
 export default function Menu() {
   return (
     <ContentWrapper className="hero-body">
-      <HeroBody />
       <Tables>
         <MilkteaMenu />
         <AddOn />
