@@ -8,7 +8,11 @@ import About from "./About";
 import PageLink from "../components/pageLink";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 
-// * Component Style
+/*
+ * ===================
+ * Components Style
+ * ===================
+ */
 const ContentWrapper = styled.div`
   margin: 17.4vh auto;
   text-align: center;
@@ -43,19 +47,24 @@ const OutlineButton = styled(PageLink)`
   border-radius: 8px;
 `;
 
+// ? Media Queries
 const MediaQuery = createGlobalStyle`
+  @media screen and (max-width: 720px) {
+    h3 {
+      font-size: 45px !important;
+    }
 
-@media screen and (max-width: 720px) {
-  h3 {
-    font-size: 45px !important;
+    h6 {
+      font-size: 1.2rem !important;
+    }
   }
-
-  h6 {
-    font-size: 1.2rem !important;
-  }
-}
 `;
 
+/*
+ * ===================
+ * Components
+ * ===================
+ */
 function Intro() {
   return <Title className="header">BlackPearl In Your Area!</Title>;
 }

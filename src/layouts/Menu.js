@@ -4,6 +4,11 @@ import styled, { createGlobalStyle } from "styled-components";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import MenuData from "./data/menu.data";
 
+/*
+ * ===================
+ * Component Style
+ * ===================
+ */
 const ContentWrapper = styled.div`
   margin: 0 auto;
 `;
@@ -73,10 +78,13 @@ const Caption = styled.h6`
 `;
 
 /*
- * Menu Tables
- * Data are fetched from JSON file (menu.data.json)
+ * ===================
+ * Components
+ * ===================
  */
 function MilkteaMenu() {
+  //  Menu Tables
+  //  Data are fetched from JSON file (data/menu.data.json)
   return (
     <MilkteaTable>
       <table className="table is-bordered">

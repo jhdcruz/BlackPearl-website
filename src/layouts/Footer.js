@@ -2,6 +2,11 @@ import React from "react";
 import "dependency/bulma/css/bulma.min.css";
 import styled from "styled-components";
 
+/*
+ * ===================
+ * Component Style
+ * ===================
+ */
 const GitHub = styled.a`
   font-size: 12.5px;
   color: #c7c7c7;
@@ -20,6 +25,11 @@ const GitHub = styled.a`
   }
 `;
 
+/*
+ * ===================
+ * Component
+ * ===================
+ */
 export default function Footer() {
   return (
     <footer className="hero-footer">

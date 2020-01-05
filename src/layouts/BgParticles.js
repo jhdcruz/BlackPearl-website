@@ -5,6 +5,11 @@ import particlesConfig from "./data/particlesjs-config.json";
 
 import { createGlobalStyle } from "styled-components";
 
+/*
+ * ===================
+ * Component Style
+ * ===================
+ */
 const ParticlesBg = createGlobalStyle`
   canvas,
   .particle-bg {
@@ -19,6 +24,11 @@ const ParticlesBg = createGlobalStyle`
   }
 `;
 
+/*
+ * ===================
+ * Component
+ * ===================
+ */
 export default function bgParticles() {
   return (
     <>

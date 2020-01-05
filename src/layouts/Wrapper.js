@@ -11,6 +11,11 @@ import About from "./About";
 
 import { createGlobalStyle } from "styled-components";
 
+/*
+ * ===================
+ * Component
+ * ===================
+ */
 const RouterWrapper = createGlobalStyle`
   .routerContent {
     position: relative;
@@ -22,6 +27,11 @@ const RouterWrapper = createGlobalStyle`
   }
 `;
 
+/*
+ * ===================
+ * Components
+ * ===================
+ */
 function Router() {
   // ? Map the props
   function mapStyles(styles) {

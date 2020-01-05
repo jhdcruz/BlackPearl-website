@@ -8,6 +8,11 @@ import Wrapper from "layouts/Wrapper";
 import Footer from "layouts/Footer";
 import styled, { createGlobalStyle } from "styled-components";
 
+/*
+ * ===================
+ * Component Style
+ * ===================
+ */
 const GlobalStyle = createGlobalStyle`
   body,
   html {
@@ -72,6 +77,11 @@ const MainContent = styled.div`
   z-index: 2;
 `;
 
+/*
+ * ===================
+ * Components Render
+ * ===================
+ */
 ReactDOM.render(
   <>
     <BgParticles />

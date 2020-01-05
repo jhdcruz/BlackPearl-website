@@ -5,6 +5,11 @@ import PageLink from "./pageLink";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import Branding from "images/brand.svg";
 
+/*
+ * ===================
+ * Component Style
+ * ===================
+ */
 const NavBar = styled.nav`
   margin-bottom: 30px;
   background-color: rgba(40, 40, 40, 0.8) !important;
@@ -48,6 +53,11 @@ const NavEnd = styled.div`
   }
 `;
 
+/*
+ * ===================
+ * Component
+ * ===================
+ */
 export default function Nav() {
   // ? Hamburger Menu toggler
   function navActive() {
