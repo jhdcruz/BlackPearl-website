@@ -54,7 +54,7 @@ function SubIntro() {
   );
 }
 
-export default function Introduction() {
+export default function Home() {
   return (
     <ContentWrapper className="hero-body">
       <div className="container">

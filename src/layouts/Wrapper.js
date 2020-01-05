@@ -5,7 +5,7 @@ import "dependency/bulma/css/bulma.min.css";
 
 // * Components Import
 import Nav from "../components/nav";
-import Intro from "./Introduction";
+import Intro from "./Home";
 import Menu from "./Menu";
 import About from "./About";
 
