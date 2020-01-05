@@ -71,7 +71,7 @@ function SubIntro() {
 export default function Home() {
   return (
     <ContentWrapper className="hero-body">
-      {/*Mobile Styles*/}
+      {/* Mobile Styles */}
       <MediaQuery />
 
       {/* Main Content */}
