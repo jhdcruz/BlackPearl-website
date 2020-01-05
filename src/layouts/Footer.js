@@ -4,17 +4,18 @@ import styled from "styled-components";
 
 const GitHub = styled.a`
   font-size: 12.5px;
-  color: #828282;
+  color: #c7c7c7;
   text-align: center;
-  margin: 4px auto;
+  margin: 0 auto;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: rgba(50, 50, 50, 0.7);
 
   :hover {
     text-decoration: none;
-    color: #969696;
+    color: #d9d9d9;
     cursor: help;
   }
 `;
