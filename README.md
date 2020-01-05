@@ -17,9 +17,8 @@ Home of the Bubble Tea Shop in Bacoor, Cavite.
 3.  run `npm` scripts depends on what you want/need.
     - `npm` scripts available:
       - `lint` - lints the whole project source code.
-      - `dev` - starts the website with HMR support _(Developer Use)_
+      - `start` - starts the website with HMR support _(Developer Use)_
       - `build` - compiles for production build
-      - `start` - starts the compiled build
 
 ## Tools
 
