@@ -1,11 +1,11 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 // * Component Imports
 import Menu from "./Menu";
 import About from "./About";
-import ButtonLink from "../components/pageLink";
+import PageLink from "../components/pageLink";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 
 // * Component Style
@@ -19,6 +19,7 @@ const Title = styled.h3`
   color: whitesmoke;
   text-transform: uppercase;
   font-size: 58px;
+  margin-top: calc(25% - 7rem);
   line-height: 1.1;
 `;
 
@@ -36,10 +37,23 @@ const ButtonGroup = styled.div`
   margin: 0 auto;
 `;
 
-const OutlineButton = styled(ButtonLink)`
+const OutlineButton = styled(PageLink)`
   background-color: transparent;
   border: whitesmoke;
   border-radius: 8px;
+`;
+
+const MediaQuery = createGlobalStyle`
+
+@media screen and (max-width: 720px) {
+  h3 {
+    font-size: 45px !important;
+  }
+
+  h6 {
+    font-size: 1.2rem !important;
+  }
+}
 `;
 
 function Intro() {
@@ -57,6 +71,10 @@ function SubIntro() {
 export default function Home() {
   return (
     <ContentWrapper className="hero-body">
+      {/*Mobile Styles*/}
+      <MediaQuery />
+
+      {/* Main Content */}
       <div className="container">
         <Intro />
         <SubIntro />
