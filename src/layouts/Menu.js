@@ -70,7 +70,7 @@ function MilkteaMenu() {
 function AddOn() {
   return (
     <div className="column combined-table">
-      // * Table for Sinkers Menu
+      {/* Table for Sinkers Menu */}
       <table className="table is-bordered column">
         <thead>
           <tr>
@@ -89,7 +89,7 @@ function AddOn() {
           ))}
         </tbody>
       </table>
-      // * Table for Coolers Menu
+      {/* Table for Coolers Menu */}
       <table className="table is-bordered column">
         <thead>
           <tr>
