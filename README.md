@@ -44,6 +44,6 @@ Home of the Bubble Tea Shop in Bacoor, Cavite.
 
 ---
 
-### License
+## License
 
 This work is licensed under [MIT License](/LICENSE.txt).
