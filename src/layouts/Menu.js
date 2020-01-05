@@ -1,6 +1,6 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import MenuData from "./data/menu.data";
 
@@ -17,6 +17,37 @@ const Tables = styled.div`
   table {
     margin: 10px 5px !important;
   }
+
+  th:hover,
+  tr:hover {
+    background-color: rgba(245, 245, 245, 0.8);
+  }
+`;
+
+const MediaQuery = createGlobalStyle`
+  @media screen and (max-width: 720px) {
+    table {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      width: max-content;
+    }
+
+    .mobile-container {
+      padding: 0 !important;
+      margin: 0 auto !important;
+      width: max-content;
+    }
+
+    .mobile {
+      display: block !important;
+      width: max-content !important;
+    }
+
+    .addon-mobile {
+      width: max-content !important;
+      margin: 0 auto !important;
+    }
+}
 `;
 
 const MilkteaTable = styled.div`
@@ -33,7 +64,7 @@ const AddOnTable = styled.div`
 const Caption = styled.h6`
   text-align: center;
   font-size: 15px;
-  margin: 10px 5px;
+  margin: 10px 5px 30px 5px;
   padding: 2px;
   font-weight: 500;
   color: #f4f4f4;
@@ -84,7 +115,7 @@ function MilkteaMenu() {
 
 function AddOn() {
   return (
-    <AddOnTable>
+    <AddOnTable className="addon-mobile">
       {/* Table for Sinkers Menu */}
       <table className="table is-bordered">
         <thead>
@@ -134,8 +165,9 @@ function AddOn() {
 
 export default function Menu() {
   return (
-    <ContentWrapper className="hero-body">
-      <Tables>
+    <ContentWrapper className="hero-body mobile-container">
+      <MediaQuery />
+      <Tables className="mobile">
         <MilkteaMenu />
         <AddOn />
       </Tables>
