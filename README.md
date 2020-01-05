@@ -20,7 +20,6 @@ Home of the Bubble Tea Shop in Bacoor, Cavite.
       - `dev` - starts the website with HMR support _(Developer Use)_
       - `build` - compiles for production build
       - `start` - starts the compiled build
-      - `export` - export the whole project for static serving
 
 ## Tools
 
@@ -28,7 +27,7 @@ Home of the Bubble Tea Shop in Bacoor, Cavite.
 
 - [`React.js`](https://reactjs.org) *(Manual Setup)*
 - [`styled-components`](https://www.styled-components.com/)
-- [`Bulma CSS`](https://bulma.io)
+- [`react-bulma-components`](https://github.com/couds/react-bulma-components)
 - [`react-particles-js`](https://www.npmjs.com/package/react-particles-js)
 
 **Code Quality**
