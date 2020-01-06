@@ -53,6 +53,11 @@ const ButtonGroup = styled.div`
     font-weight: bold;
     font-size: 15px;
     box-shadow: 0 0 4px rgba(255, 128, 162, 1);
+
+    :hover {
+      color: rgba(255, 128, 162, 0.9);
+      background-color: rgba(60, 60, 60, 0.95);
+    }
   }
 `;
 
