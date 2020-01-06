@@ -23,7 +23,7 @@ const Tables = styled.div`
   table {
     margin: 10px 5px !important;
     background-color: rgba(50, 50, 50, 0.95);
-    box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.6);
+    box-shadow: 4px 4px 5px rgba(255, 112, 162, 0.25);
   }
 
   th,
@@ -32,17 +32,13 @@ const Tables = styled.div`
     border-color: rgba(255, 115, 162, 0.9) !important;
 
     :hover {
-      background-color: rgba(80, 80, 80, 0.9);
+      background-color: rgba(60, 60, 60, 0.9);
     }
   }
 
   td {
     color: deeppink !important;
     border-color: rgba(255, 115, 162, 0.9) !important;
-
-    :hover {
-      background-color: rgba(80, 80, 80, 0.9);
-    }
   }
 `;
 
