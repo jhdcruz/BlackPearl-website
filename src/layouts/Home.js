@@ -3,10 +3,12 @@ import { Route } from "react-router-dom";
 import styled, { createGlobalStyle } from "styled-components";
 
 // * Component Imports
+import PageLink from "components/pageLink";
+import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
+
+// * Layouts Import
 import Menu from "./Menu";
 import About from "./About";
-import PageLink from "../components/pageLink";
-import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 
 /*
  * ===================
@@ -19,8 +21,9 @@ const ContentWrapper = styled.div`
 `;
 
 const Title = styled.h3`
+  color: rgba(50, 50, 50, 0.95);
+  text-shadow: 0 0 5px hotpink;
   font-weight: bold;
-  color: whitesmoke;
   text-transform: uppercase;
   font-size: 58px;
   margin-top: calc(25% - 7rem);
@@ -28,7 +31,8 @@ const Title = styled.h3`
 `;
 
 const Subtitle = styled.h6`
-  color: #e4e4e4 !important;
+  color: hotpink !important;
+  text-shadow: -1px 3px 2px #323232;
   font-weight: 400;
   font-size: 1.4rem !important;
   margin: 4.5px 0 16px 0;
@@ -39,12 +43,16 @@ const ButtonGroup = styled.div`
   justify-content: center !important;
   text-align: center;
   margin: 0 auto;
-`;
 
-const OutlineButton = styled(PageLink)`
-  background-color: transparent;
-  border: whitesmoke;
-  border-radius: 8px;
+  a.button {
+    background-color: rgba(50, 50, 50, 0.9);
+    border: 1px solid hotpink;
+    border-radius: 30px;
+    color: hotpink;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+  }
 `;
 
 // ? Media Queries
@@ -88,13 +96,13 @@ export default function Home() {
         <Intro />
         <SubIntro />
         <ButtonGroup className="field is-grouped">
-          <OutlineButton
+          <PageLink
             page="/menu"
             theme="button is-outlined"
             name="Our Menu"
             icon="far fa-list-alt"
           />
-          <OutlineButton
+          <PageLink
             page="/about"
             theme="button is-outlined"
             name="Our Story"

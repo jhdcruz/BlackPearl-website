@@ -9,18 +9,18 @@ import styled from "styled-components";
  */
 const GitHub = styled.a`
   font-size: 12.5px;
-  color: #c7c7c7;
+  color: hotpink;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 5px auto;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(50, 50, 50, 0.7);
+  background-color: transparent;
 
   :hover {
     text-decoration: none;
-    color: #d9d9d9;
+    color: deeppink;
     cursor: help;
   }
 `;
@@ -37,7 +37,7 @@ export default function Footer() {
         href="https://github.com/jhdcruz/BlackPearl-website"
         className="gh-redirect"
       >
-        Copyright &copy; 2019 | Joshua Hero Dela Cruz
+        Copyright &copy; 2019 | BlackPearl in your Area!
       </GitHub>
     </footer>
   );

@@ -5,6 +5,8 @@ import "dependency/bulma/css/bulma.min.css";
 
 // * Components Import
 import Nav from "../components/nav";
+
+// * Layouts Import
 import Intro from "./Home";
 import Menu from "./Menu";
 import About from "./About";
@@ -44,7 +46,7 @@ function Router() {
   // ? wrap the `spring` helper to use a bouncy config
   function bounce(val) {
     return spring(val, {
-      stiffness: 360,
+      stiffness: 400,
       damping: 65
     });
   }

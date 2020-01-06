@@ -3,9 +3,9 @@ import React from "dependency/react";
 import ReactDOM from "dependency/react-dom";
 
 // * Components Import
-import BgParticles from "layouts/BgParticles";
+import BgParticles from "components/bgParticles";
 import Wrapper from "layouts/Wrapper";
-import Footer from "layouts/Footer";
+import Footer from "components/footer";
 import styled, { createGlobalStyle } from "styled-components";
 
 /*
@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: "Kanit", "Segoe UI", sans-serif;
-    background-color: #ff80a2;
+    background-color: #323232;
     overflow-x: hidden !important;
     overflow-y: auto !important;
   }
@@ -53,23 +53,6 @@ const GlobalStyle = createGlobalStyle`
   .button:hover {
     border-color: #3273dc;
     color: #3273dc;
-  }
-
-  hr {
-    margin: 10px auto;
-    display: block;
-    border: none;
-    height: 1px;
-    border-radius: 15px;
-    background: -webkit-gradient(
-      radial,
-      50% 50%,
-      0,
-      50% 50%,
-      580,
-      from(#333),
-      to(rgba(242, 242, 242, 0.3))
-    );
   }
 `;
 

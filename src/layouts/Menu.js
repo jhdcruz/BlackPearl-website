@@ -2,7 +2,8 @@ import React from "react";
 import "dependency/bulma/css/bulma.min.css";
 import styled, { createGlobalStyle } from "styled-components";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
-import MenuData from "./data/menu.data";
+// * Components Import
+import MenuTable from "components/menuTable";
 
 /*
  * ===================
@@ -21,11 +22,27 @@ const Tables = styled.div`
 
   table {
     margin: 10px 5px !important;
+    background-color: rgba(50, 50, 50, 0.95);
+    box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.6);
   }
 
-  th:hover,
-  tr:hover {
-    background-color: rgba(245, 245, 245, 0.8);
+  th,
+  tr {
+    color: rgba(255, 128, 162, 0.9) !important;
+    border-color: rgba(255, 115, 162, 0.9) !important;
+
+    :hover {
+      background-color: rgba(80, 80, 80, 0.9);
+    }
+  }
+
+  td {
+    color: deeppink !important;
+    border-color: rgba(255, 115, 162, 0.9) !important;
+
+    :hover {
+      background-color: rgba(80, 80, 80, 0.9);
+    }
   }
 `;
 
@@ -55,129 +72,12 @@ const MediaQuery = createGlobalStyle`
 }
 `;
 
-const MilkteaTable = styled.div`
-  margin: 0 !important;
-`;
-
-const AddOnTable = styled.div`
-  table {
-    display: compact;
-    width: 13rem;
-  }
-`;
-
-const Caption = styled.h6`
-  text-align: center;
-  font-size: 15px;
-  margin: 10px 5px 30px 5px;
-  padding: 2px;
-  font-weight: 500;
-  color: #f4f4f4;
-  background-color: rgba(50, 50, 50, 0.9);
-  border-radius: 3px;
-`;
-
-/*
- * ===================
- * Components
- * ===================
- */
-function MilkteaMenu() {
-  //  Menu Tables
-  //  Data are fetched from JSON file (data/menu.data.json)
-  return (
-    <MilkteaTable>
-      <table className="table is-bordered">
-        <thead>
-          <tr>
-            <th>MilkTea</th>
-            <th>
-              <abbr title="Small">S</abbr>
-            </th>
-            <th>
-              <abbr title="Medium">M</abbr>
-            </th>
-            <th>
-              <abbr title="Large">L</abbr>
-            </th>
-            <th>
-              <abbr title="Litre">Litre</abbr>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {MenuData.menus.Milktea.map(milktea => (
-            <tr key={milktea.id}>
-              <th>{milktea.title}</th>
-              <td>{milktea.s}</td>
-              <td>{milktea.m}</td>
-              <td>{milktea.l}</td>
-              <td>{milktea.x}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </MilkteaTable>
-  );
-}
-
-function AddOn() {
-  return (
-    <AddOnTable className="addon-mobile">
-      {/* Table for Sinkers Menu */}
-      <table className="table is-bordered">
-        <thead>
-          <tr>
-            <th>Sinkers</th>
-            <th>
-              <abbr title="Price">Price</abbr>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {MenuData.menus.Sinkers.map(sinker => (
-            <tr key={sinker.id}>
-              <th>{sinker.title}</th>
-              <td>{sinker.price}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      {/* Table for Coolers Menu */}
-      <table className="table is-bordered">
-        <thead>
-          <tr>
-            <th>Coolers</th>
-            <th>
-              <abbr title="Medium">M</abbr>
-            </th>
-            <th>
-              <abbr title="Large">L</abbr>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {MenuData.menus.Coolers.map(cooler => (
-            <tr key={cooler.id}>
-              <th>{cooler.title}</th>
-              <td>{cooler.m}</td>
-              <td>{cooler.l}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <Caption>Prices are listed in Php. (&#8369;)</Caption>
-    </AddOnTable>
-  );
-}
-
 export default function Menu() {
   return (
     <ContentWrapper className="hero-body mobile-container">
       <MediaQuery />
       <Tables className="mobile">
-        <MilkteaMenu />
-        <AddOn />
+        <MenuTable />
       </Tables>
     </ContentWrapper>
   );

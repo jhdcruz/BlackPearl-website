@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+
 // * Components Import
 import PageLink from "./pageLink";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+
+// * Asset Import
 import Branding from "images/brand.svg";
 
 /*
@@ -12,7 +15,8 @@ import Branding from "images/brand.svg";
  */
 const NavBar = styled.nav`
   margin-bottom: 30px;
-  background-color: rgba(40, 40, 40, 0.8) !important;
+  background-color: rgba(40, 40, 40, 0.85) !important;
+  box-shadow: 0 0 6px deeppink;
 
   &.is-transparent {
     background-color: transparent;
