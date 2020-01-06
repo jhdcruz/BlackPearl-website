@@ -9,7 +9,7 @@ import styled from "styled-components";
  */
 const GitHub = styled.a`
   font-size: 12.5px;
-  color: rgb(255, 115, 162);
+  color: rgba(255, 115, 162, 0.55);
   text-shadow: 0 0 6px #323232;
   text-align: center;
   margin: 0 auto 5px auto;
