@@ -52,6 +52,7 @@ const ButtonGroup = styled.div`
     text-transform: uppercase;
     font-weight: bold;
     font-size: 15px;
+    box-shadow: 0 0 4px hotpink;
   }
 `;
 
