@@ -47,18 +47,18 @@ const MediaQuery = createGlobalStyle`
     table {
       margin: 0 auto !important;
       padding: 0 !important;
-      width: max-content;
+      width: 100%;
     }
 
     .mobile-container {
       padding: 0 !important;
       margin: 0 auto !important;
-      width: max-content;
+      width: 100%;
     }
 
     .mobile {
       display: block !important;
-      width: max-content !important;
+      width: 100%;
     }
 
     .addon-mobile {
