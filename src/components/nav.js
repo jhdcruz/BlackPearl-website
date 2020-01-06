@@ -41,19 +41,16 @@ const NavEnd = styled.div`
   letter-spacing: 1.4px;
 
   .navbar-item {
-    color: white;
+    color: #ff80a2;
+    text-shadow: 0 1px 9px #ff80a2;
 
     :hover {
-      border-top: 2px solid #c7637e !important;
-      border-bottom: 2px solid #c7637e !important;
       color: #ff80a2 !important;
     }
-  }
 
-  .active {
-    border-top: 2px solid #ff80a2 !important;
-    border-bottom: 2px solid #ff80a2 !important;
-    color: #ff80a2 !important;
+    &.active {
+      color: #ff80a2;
+    }
   }
 `;
 
