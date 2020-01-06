@@ -22,19 +22,19 @@ const ContentWrapper = styled.div`
 
 const Title = styled.h3`
   color: rgba(50, 50, 50, 0.95);
-  text-shadow: 0 0 5px hotpink;
+  text-shadow: 0 0 6px rgba(255, 118, 162, 1);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 58px;
+  font-size: 61px;
   margin-top: calc(25% - 7rem);
   line-height: 1.1;
 `;
 
 const Subtitle = styled.h6`
-  color: hotpink !important;
+  color: rgba(255, 128, 162, 1) !important;
   text-shadow: -1px 3px 2px #323232;
-  font-weight: 400;
-  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  font-size: 1.3rem !important;
   margin: 4.5px 0 16px 0;
 `;
 
@@ -46,13 +46,13 @@ const ButtonGroup = styled.div`
 
   a.button {
     background-color: rgba(50, 50, 50, 0.9);
-    border: 1px solid hotpink;
+    border: 1px solid rgba(255, 128, 162, 1);
     border-radius: 30px;
-    color: hotpink;
+    color: rgba(255, 128, 162, 1);
     text-transform: uppercase;
     font-weight: bold;
     font-size: 15px;
-    box-shadow: 0 0 4px hotpink;
+    box-shadow: 0 0 4px rgba(255, 128, 162, 1);
   }
 `;
 
