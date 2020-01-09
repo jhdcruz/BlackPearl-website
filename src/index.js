@@ -23,7 +23,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Kanit", "Segoe UI", sans-serif;
     background-color: #323232;
     overflow-x: hidden !important;
-    overflow-y: hidden !important;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 
   .hero {
