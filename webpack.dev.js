@@ -23,7 +23,7 @@ module.exports = merge(common, {
         {
           name: "description",
           content:
-            "Home of the Best Bubble Tea Shop in Bacoor, Cavite, Philippines."
+            "Home of the Best Bubble Tea Shop in Bacoor, Cavite, Philippines. Serving refreshing drinks and scrumptious foot at great value for your money. With a great variety of milk and fruitteas, snacks, and rice toppers to choose from."
         },
         {
           name: "owner",
