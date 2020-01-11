@@ -1,5 +1,5 @@
 // ! High Level imports
-import React from "dependency/react";
+import React, { Component } from "dependency/react";
 import ReactDOM from "dependency/react-dom";
 
 // * Components Import
@@ -87,7 +87,7 @@ function Content() {
  * ===================
  */
 
-class Loader extends React.Component {
+class Loader extends Component {
   constructor(props) {
     super(props);
 
@@ -101,9 +101,9 @@ class Loader extends React.Component {
   }
 
   render() {
-    const content = this.state.loading ? <Spinner /> : <Content />;
+    const webContent = this.state.loading ? <Spinner /> : <Content />;
 
-    return <div>{content}</div>;
+    return <div>{webContent}</div>;
   }
 }
 
@@ -113,4 +113,4 @@ class Loader extends React.Component {
  * ===================
  */
 
-ReactDOM.render(<Spinner />, document.getElementById("root"));
+ReactDOM.render(<Loader />, document.getElementById("root"));
