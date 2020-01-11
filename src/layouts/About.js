@@ -31,9 +31,6 @@ const Branding = styled.div`
   text-align: center;
   vertical-align: middle;
   user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 
   img {
     width: 22rem;
