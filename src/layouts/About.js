@@ -4,6 +4,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 // Asset Import
 import Brand from "images/brand.svg";
+import Map from "images/map.png";
 
 /*
  * ===================
@@ -12,15 +13,37 @@ import Brand from "images/brand.svg";
  */
 
 const ContainerCard = createGlobalStyle`
+  .columns {
+    padding: 20px !important;
+
+    a,
+    p {
+      color: #ff6c93;
+      padding: 8px;
+      font-size: 1.2rem;
+
+      :hover {
+        color: #ff4c93;
+      }
+    }
+
+    i {
+      font-size: 1.5rem;
+      margin: auto 6px;
+      padding: 3px;
+    }
+  }
+
   .CompanyCard {
     background-color: rgba(20, 20, 20, 0.7);
+    color: #ff6c93;
     border-radius: 8px;
-    padding: 18px !important;
+    padding: 20px !important;
     vertical-align: middle;
-    margin: 4% auto !important;
-    max-width: 75% !important;
-    height: 45% !important;
+    margin: 70px 10px !important;
+    height: 380px !important;
   }
+
 `;
 
 const Branding = styled.div`
@@ -49,6 +72,7 @@ const Story = styled.h6`
   padding: 10px calc(25px - 3px);
   margin: 8px auto;
   font-size: 17px;
+  text-indent: 3em;
   color: #ff6c93;
   text-shadow: -1px 3px 2px #323232;
   font-weight: 600 !important;
@@ -59,29 +83,73 @@ const Story = styled.h6`
   }
 `;
 
+const AdditionalInfoContent = styled.div`
+  padding: 0 10% !important;
+  margin: 12% auto !important;
+`;
+
+const Contact = styled.h4`
+  font-size: 25px;
+  margin: 10px auto;
+  font-weight: bold;
+`;
+
+function BusinessCard() {
+  return (
+    <>
+      <div className="container CompanyCard column">
+        <Branding>
+          <img src={Brand} alt="BlackPearl" />
+          <br /> In Your Area!
+        </Branding>
+        <CatchPhrase>
+          Home of the Best Bubble Tea Shop in Bacoor, Cavite.
+        </CatchPhrase>
+        <Story>
+          Founded by <strong>Jay Camagong</strong> and his family on
+          <strong> May 2019</strong>. The shop is located at their home,
+          <strong>
+            {" "}
+            Blk 3 Lt 2, Mahogany Drive, Camellia Homes, Seville, Habay 2.
+          </strong>{" "}
+          Serving refreshing drinks and scrumptious foot at great value for your
+          money. With a great variety of milk and fruitteas, snacks, and rice
+          toppers to choose from.
+        </Story>
+      </div>
+      <AdditionalInfo />
+    </>
+  );
+}
+
+function AdditionalInfo() {
+  return (
+    <div className="container CompanyCard column">
+      <AdditionalInfoContent>
+        <Contact>Contact Information:</Contact>
+        <a href="https://www.facebook.com/BlackPearl-in-your-area-419571681980696/">
+          <i className="fab fa-facebook-square" /> BlackPearl in your Area!
+        </a>
+        <p>
+          <i className="fas fa-phone" />
+          (+63) 918-627-3555
+        </p>
+        <a href="https://her.is/2smE9v2">
+          <i className="fas fa-map-marker-alt" /> Blk 3 Lt 2, Mahogany Drive,
+          Camellia Homes, Seville, Habay 2. Imus, Cavite, Philippines.
+        </a>
+      </AdditionalInfoContent>
+    </div>
+  );
+}
+
 export default function About() {
   return (
-    <div className="container CompanyCard">
+    <>
       <ContainerCard />
-      {/* Left Side */}
-      <Branding>
-        <img src={Brand} alt="BlackPearl" />
-        <br /> In Your Area!
-      </Branding>
-      <CatchPhrase>
-        Home of the Best Bubbles Tea Shop in Bacoor, Cavite.
-      </CatchPhrase>
-      <Story>
-        Founded by <strong>Jay Camagong</strong> and his family on
-        <strong> May 2019</strong>. The shop is located at their home,
-        <strong>
-          {" "}
-          Blk 3 Lt 2, Mahogany Drive, Camellia Homes, Seville, Habay 2.
-        </strong>{" "}
-        Serving refreshing drinks and scrumptious foot at great value for your
-        money. With a great variety of milk and fruitteas, snacks, and rice
-        toppers to choose from.
-      </Story>
-    </div>
+      <div className="columns">
+        <BusinessCard />
+      </div>
+    </>
   );
 }

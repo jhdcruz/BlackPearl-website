@@ -35,7 +35,7 @@ const WebBrand = styled.div`
 
 const NavEnd = styled.div`
   color: whitesmoke;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.4px;

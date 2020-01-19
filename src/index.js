@@ -1,9 +1,8 @@
 // ! High Level imports
-import React, { Component } from "dependency/react";
+import React from "dependency/react";
 import ReactDOM from "dependency/react-dom";
 
 // * Components Import
-import Spinner from "components/Spinner";
 import BgParticles from "components/bgParticles";
 import Wrapper from "layouts/Wrapper";
 import Footer from "components/footer";
@@ -63,54 +62,20 @@ const GlobalStyle = createGlobalStyle`
 const MainContent = styled.div`
   z-index: 2;
 `;
-/*
- * ===================
- * Components
- * ===================
- */
-function Content() {
-  return (
-    <>
-      <BgParticles />
-      <GlobalStyle />
-      <MainContent className="hero">
-        <Wrapper />
-        <Footer />
-      </MainContent>
-    </>
-  );
-}
-
-/*
- * ===================
- * Spinner / Loader
- * ===================
- */
-
-class Loader extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      loading: true
-    };
-  }
-
-  componentDidMount() {
-    this.setState({ loading: false });
-  }
-
-  render() {
-    const webContent = this.state.loading ? <Spinner /> : <Content />;
-
-    return <div>{webContent}</div>;
-  }
-}
 
 /*
  * ===================
  * Components Render
  * ===================
  */
-
-ReactDOM.render(<Loader />, document.getElementById("root"));
+ReactDOM.render(
+  <>
+    <BgParticles />
+    <GlobalStyle />
+    <MainContent className="hero">
+      <Wrapper />
+      <Footer />
+    </MainContent>
+  </>,
+  document.getElementById("root")
+);
