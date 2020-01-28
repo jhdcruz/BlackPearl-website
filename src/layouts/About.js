@@ -4,7 +4,6 @@ import styled, { createGlobalStyle } from "styled-components";
 
 // Asset Import
 import Brand from "images/brand.svg";
-import Map from "images/map.png";
 
 /*
  * ===================
