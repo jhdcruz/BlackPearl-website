@@ -14,7 +14,7 @@ const MilkteaTable = styled.div`
 const AddOnTable = styled.div`
   table {
     display: compact;
-    width: 13rem;
+    width: 14em;
   }
 `;
 
