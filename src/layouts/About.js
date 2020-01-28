@@ -135,7 +135,7 @@ function AdditionalInfo() {
         </p>
         <a href="https://her.is/2smE9v2">
           <i className="fas fa-map-marker-alt" /> Blk 3 Lt 2, Mahogany Drive,
-          Camellia Homes, Seville, Habay 2. Imus, Cavite, Philippines.
+          Camella Homes, Seville, Habay 2. Imus, Cavite, Philippines.
         </a>
       </AdditionalInfoContent>
     </div>
