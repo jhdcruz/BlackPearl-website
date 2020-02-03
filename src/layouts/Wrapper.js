@@ -9,6 +9,7 @@ import Nav from "../components/nav";
 // * Layouts Import
 import Intro from "./Home";
 import Menu from "./Menu";
+import Events from "./Events";
 import About from "./About";
 
 import { createGlobalStyle } from "styled-components";
@@ -83,6 +84,7 @@ function Router() {
         {/* Router Contents */}
         <Route exact path="/" component={Intro} />
         <Route path="/menu" component={Menu} />
+        <Route path="/events" component={Events} />
         <Route path="/about" component={About} />
       </AnimatedSwitch>
     </div>
