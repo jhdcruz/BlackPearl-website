@@ -24,7 +24,7 @@ const Caption = styled.h6`
   margin: 10px 5px 30px 5px;
   padding: 2px;
   font-weight: 500;
-  color: deeppink;
+  color: #ff4c93;
   border: 1px solid rgba(255, 115, 162, 0.9);
   box-shadow: 0 0 5px rgba(255, 112, 162, 0.6);
   background-color: rgba(50, 50, 50, 0.9);

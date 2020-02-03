@@ -77,7 +77,7 @@ const Story = styled.h6`
   font-weight: 600 !important;
 
   strong {
-    color: deeppink;
+    color: #ff4c93;
     font-size: 18px;
   }
 `;
@@ -139,6 +139,14 @@ function AdditionalInfo() {
         </a>
       </AdditionalInfoContent>
     </div>
+  );
+}
+
+function Testimonials() {
+  return (
+    <>
+      <div className="container CompanyCard"></div>
+    </>
   );
 }
 

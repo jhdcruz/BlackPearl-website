@@ -37,7 +37,7 @@ const Tables = styled.div`
   }
 
   td {
-    color: deeppink !important;
+    color: #ff4c93 !important;
     border-color: rgba(255, 115, 162, 0.9) !important;
   }
 `;
