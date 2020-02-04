@@ -8,7 +8,7 @@ const Notice = styled.h4`
   text-align: center;
   text-transform: uppercase;
   text-shadow: -1px 3px 2px #323232;
-  margin: 13rem auto 0 auto;
+  margin: 14rem auto 0 auto;
   line-height: 1.1;
   display: block;
 `;

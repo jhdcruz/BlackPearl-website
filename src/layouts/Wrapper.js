@@ -1,6 +1,7 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
 import { AnimatedSwitch, spring } from "react-router-transition";
+import { createGlobalStyle } from "styled-components";
 import "dependency/bulma/css/bulma.min.css";
 
 // * Components Import
@@ -12,7 +13,6 @@ import Menu from "./Menu";
 import Events from "./Events";
 import About from "./About";
 
-import { createGlobalStyle } from "styled-components";
 
 /*
  * ===================

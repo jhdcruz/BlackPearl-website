@@ -43,7 +43,7 @@ const ContainerCard = createGlobalStyle`
     padding: 20px !important;
     vertical-align: middle;
     margin: 70px 10px !important;
-    height: 380px !important;
+    height: max-content !important;
   }
 
 `;
@@ -87,13 +87,19 @@ const Story = styled.h6`
 
 const AdditionalInfoContent = styled.div`
   padding: 0 10% !important;
-  margin: 12% auto !important;
+  margin: 9% auto !important;
 `;
 
 const Contact = styled.h4`
   font-size: 25px;
   margin: 10px auto;
   font-weight: bold;
+`;
+
+const Label = styled.h3`
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-shadow: -1px 3px 2px #323232;
 `;
 
 function BusinessCard() {
@@ -153,6 +159,7 @@ function Testimonials() {
   return (
     <>
       <div className="container CompanyCard">
+        <Label>Testimonials</Label>
         <TestimonialContent />
       </div>
     </>
@@ -163,9 +170,7 @@ export default function About() {
   return (
     <>
       <ContainerCard />
-      <>
-        <BusinessCard />
-      </>
+      <BusinessCard />
       <Testimonials />
     </>
   );

@@ -21,7 +21,7 @@ const ContentWrapper = styled.div`
 `;
 
 const Title = styled.h3`
-  color: rgba(50, 50, 50, 0.95);
+  color: rgba(47, 47, 47, 0.95);
   text-shadow: 0 0 6px rgba(255, 118, 162, 1);
   font-weight: bold;
   text-transform: uppercase;
