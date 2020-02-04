@@ -1,5 +1,4 @@
 import React from "react";
-import "dependency/bulma/css/bulma.min.css";
 import styled, { createGlobalStyle } from "styled-components";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 // * Components Import
