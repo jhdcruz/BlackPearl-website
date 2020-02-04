@@ -2,6 +2,9 @@ import React from "react";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import styled, { createGlobalStyle } from "styled-components";
 
+// Component Imports
+import TestimonialContent from "components/testimonialContent";
+
 // Asset Import
 import Brand from "images/brand.svg";
 
@@ -95,7 +98,7 @@ const Contact = styled.h4`
 
 function BusinessCard() {
   return (
-    <>
+    <div className="columns">
       <div className="container CompanyCard column">
         <Branding>
           <img src={Brand} alt="BlackPearl" />
@@ -117,7 +120,7 @@ function BusinessCard() {
         </Story>
       </div>
       <AdditionalInfo />
-    </>
+    </div>
   );
 }
 
@@ -126,8 +129,12 @@ function AdditionalInfo() {
     <div className="container CompanyCard column">
       <AdditionalInfoContent>
         <Contact>Contact Information:</Contact>
-        <a href="https://www.facebook.com/BlackPearl-in-your-area-419571681980696/">
+        <a href="https://facebook.com/BlackPearl-in-your-area-419571681980696/">
           <i className="fab fa-facebook-square" /> BlackPearl in your Area!
+        </a>
+        <p />
+        <a href="https://instagram.com/blackpearlinyourarea/">
+          <i className="fab fa-instagram" /> @blackpearlinyourarea
         </a>
         <p>
           <i className="fas fa-phone" />
@@ -145,7 +152,9 @@ function AdditionalInfo() {
 function Testimonials() {
   return (
     <>
-      <div className="container CompanyCard"></div>
+      <div className="container CompanyCard">
+        <TestimonialContent />
+      </div>
     </>
   );
 }
@@ -154,9 +163,10 @@ export default function About() {
   return (
     <>
       <ContainerCard />
-      <div className="columns">
+      <>
         <BusinessCard />
-      </div>
+      </>
+      <Testimonials />
     </>
   );
 }
