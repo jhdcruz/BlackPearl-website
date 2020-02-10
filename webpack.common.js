@@ -12,7 +12,7 @@ module.exports = {
     alias: {
       images: path.join(__dirname, "./src/shared/img"),
       components: path.join(__dirname, "./src/components"),
-      layouts: path.join(__dirname, "./src/layouts"),
+      layouts: path.join(__dirname, "./src/pages"),
       dependency: path.join(__dirname, "node_modules")
     }
   },
