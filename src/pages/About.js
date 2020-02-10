@@ -46,6 +46,10 @@ const ContainerCard = createGlobalStyle`
     height: max-content !important;
   }
 
+  .TestimonialSection {
+    margin: 0 auto 30px auto !important;
+  }
+
 `;
 
 const Branding = styled.div`
@@ -97,8 +101,16 @@ const Contact = styled.h4`
 `;
 
 const Label = styled.h3`
-  font-size: 1.8rem;
+  line-height: 1;
+  font-size: 2rem;
+  text-align: center;
   text-transform: uppercase;
+  text-shadow: -1px 3px 2px #323232;
+`;
+
+const SubLabel = styled.h6`
+  font-size: 1.2rem;
+  text-align: center;
   text-shadow: -1px 3px 2px #323232;
 `;
 
@@ -158,8 +170,9 @@ function AdditionalInfo() {
 function Testimonials() {
   return (
     <>
-      <div className="container CompanyCard">
+      <div className="container CompanyCard TestimonialSection">
         <Label>Testimonials</Label>
+        <SubLabel>What others says about us</SubLabel>
         <TestimonialContent />
       </div>
     </>

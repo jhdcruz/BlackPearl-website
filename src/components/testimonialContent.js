@@ -1,6 +1,9 @@
 import React from "react";
-import Testimonials from "./data/testimonials.data.json";
 import styled from "styled-components";
+
+import t1 from "images/reviews/1.jpg";
+import t2 from "images/reviews/2.jpg";
+import t3 from "images/reviews/3.jpg";
 
 /*
  * ===================
@@ -10,15 +13,23 @@ import styled from "styled-components";
 
 const Media = styled.div`
   margin: 10px auto !important;
+  text-align: center !important;
+
+  figure {
+    margin: 7px auto !important;
+  }
 `;
 
 const Profile = styled.img`
   border-radius: 50%;
+  margin: 5px auto !important;
+  display: block !important;
 `;
 
 const Recommendation = styled.p`
   color: rgba(255, 128, 162, 1) !important;
   text-shadow: -1px 3px 2px #323232;
+  text-align: center;
 
   span {
     color: #ff4c93;
@@ -26,12 +37,24 @@ const Recommendation = styled.p`
 `;
 
 const ReviewCard = styled.div`
-  background-color: rgba(20, 20, 20, 0.6);
+  background-color: transparent;
+  margin: 0 auto;
+  text-align: center;
+
+  .card-content {
+    padding-top: 0;
+  }
+
+  .testimonial {
+    margin: 30px auto;
+    padding: 10px auto;
+  }
 `;
 
 const Reviewer = styled.p`
   color: rgba(255, 128, 162, 1) !important;
   text-shadow: -1px 3px 2px #323232;
+  text-align: center;
 `;
 
 const ReviewContent = styled.div`
@@ -55,30 +78,74 @@ export default function TestimonialContent() {
   return (
     <ReviewCard className="card">
       <div className="card-content">
-        {Testimonials.testimonial.map(review => (
-          <div key={review.id}>
-            <Media className="media">
-              <div className="media-left">
-                <figure className="image is-48x48">
-                  {/* TODO: Replace with local image | to be presented offline! */}
-                  <Profile src={review.profile} alt="Placeholder image" />
-                </figure>
-              </div>
-              <div className="media-content">
-                <Reviewer className="title is-4">{review.name}</Reviewer>
-                <Recommendation className="subtitle is-6">
-                  recommends <span>BlackPearl in your area</span>.
-                </Recommendation>
-              </div>
-            </Media>
+        {/* 1st Rreview */}
+        <div className="testimonial">
+          <Media>
+            <figure className="image is-48x48">
+              <Profile src={t1} alt="Profile Image" />
+            </figure>
+            <div className="media-content">
+              <Reviewer className="title is-4">Jewel Alcantara</Reviewer>
+              <Recommendation className="subtitle is-6">
+                recommends <span>BlackPearl in your area</span>.
+              </Recommendation>
+            </div>
+          </Media>
+          <ReviewContent className="content">
+            My favorite takoyaki. Super Sarap and sulit na sulit. Hindi Tinipid
+            and Legit na Octopus at Cheese ang laman. And The sauce Superb
+            talaga!!!
+            <br />
+            <ReviewDate>22 Jan 2020 - 23:32</ReviewDate>
+          </ReviewContent>
+        </div>
 
-            <ReviewContent className="content">
-              {review.content}
-              <br />
-              <ReviewDate>{review.datetime}</ReviewDate>
-            </ReviewContent>
-          </div>
-        ))}
+        {/* 2nd Review */}
+        <div className="testimonial">
+          <Media>
+            <figure className="image is-48x48">
+              <Profile src={t2} alt="Profile Image" />
+            </figure>
+            <div className="media-content">
+              <Reviewer className="title is-4">Luisa Jose Reyes</Reviewer>
+              <Recommendation className="subtitle is-6">
+                recommends <span>BlackPearl in your area</span>.
+              </Recommendation>
+            </div>
+          </Media>
+          <ReviewContent className="content">
+            The best ang milk tea at yung mga silog, the best din... Bacsilog
+            and Tapsilog one of my faves... isama na din natin yung super sulit
+            na beef pares. mura na masarap pa. salamat sa patuloy na pag deliver
+            samin ng masarap na pagkain at milk tea... more menu to come. yung
+            takoyaki pag meron ulit... <br />
+            <ReviewDate>17 Jan 2020 - 7:41</ReviewDate>
+          </ReviewContent>
+        </div>
+
+        {/* 3rd Review */}
+        <div className="testimonial">
+          <Media>
+            <figure className="image is-48x48">
+              <Profile src={t3} alt="Profile Image" />
+            </figure>
+            <div className="media-content">
+              <Reviewer className="title is-4">Rosemarie Melgarejo</Reviewer>
+              <Recommendation className="subtitle is-6">
+                recommends <span>BlackPearl in your area</span>.
+              </Recommendation>
+            </div>
+          </Media>
+          <ReviewContent className="content">
+            Thank you, for always doing such a great effort on bringing us our
+            favorites(Bacsilog, Tapsilog, Siomai Rice, Takoyaki and Milk Tea)
+            from Bacoor all the way through McKinley. Amidst the hustle, you
+            never fail to satisfy our cravings with the very affordable and
+            reasonable price. Truly, happiness can be experienced in every
+            sip/bite. More Power to BlackPearl In Your Area <br />
+            <ReviewDate>17 Jan 2020 - 9:25</ReviewDate>
+          </ReviewContent>
+        </div>
       </div>
     </ReviewCard>
   );
