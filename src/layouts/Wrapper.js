@@ -13,7 +13,6 @@ import Menu from "./Menu";
 import Events from "./Events";
 import About from "./About";
 
-
 /*
  * ===================
  * Component
