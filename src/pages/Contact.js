@@ -13,7 +13,6 @@ const Notice = styled.h4`
   display: block;
 `;
 
-
 export default function Events() {
   return <Notice>Contact page.</Notice>;
 }
