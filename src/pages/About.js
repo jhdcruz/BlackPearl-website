@@ -42,7 +42,7 @@ const ContainerCard = createGlobalStyle`
     border-radius: 8px;
     padding: 20px 10px !important;
     vertical-align: middle;
-    margin: 70px auto 40px auto !important;
+    margin: 70px auto 30px auto !important;
     height: max-content !important;
   }
 
@@ -89,17 +89,6 @@ const Story = styled.h6`
   }
 `;
 
-// const AdditionalInfoContent = styled.div`
-//   padding: 0 10% !important;
-//   margin: 9% auto !important;
-// `;
-//
-// const Contact = styled.h4`
-//   font-size: 25px;
-//   margin: 10px auto;
-//   font-weight: bold;
-// `;
-
 const Label = styled.h3`
   line-height: 1;
   margin-top: 20px;
@@ -114,6 +103,29 @@ const SubLabel = styled.h6`
   text-align: center;
   text-shadow: -1px 3px 2px #323232;
   margin-bottom: 20px;
+`;
+
+const FooterCard = styled.footer`
+  background-color: rgba(30, 30, 30, 0.8);
+  width: max-content;
+  padding: 2px 15px;
+  border-radius: 8px;
+  margin: 10px auto;
+  border: 1px solid #ff80a2;
+`;
+
+const GitHub = styled.a`
+  font-size: 12.5px;
+  color: rgba(255, 115, 162, 0.85);
+  text-shadow: 0 0 6px #323232;
+  text-align: center;
+  margin: 0 auto 5px auto;
+
+  :hover {
+    text-decoration: none;
+    color: deeppink;
+    cursor: help;
+  }
 `;
 
 function BusinessCard() {
@@ -144,31 +156,6 @@ function BusinessCard() {
   );
 }
 
-// function AdditionalInfo() {
-//   return (
-//     <div className="container CompanyCard column">
-//       <AdditionalInfoContent>
-//         <Contact>Contact Information:</Contact>
-//         <a href="https://facebook.com/BlackPearl-in-your-area-419571681980696/">
-//           <i className="fab fa-facebook-square" /> BlackPearl in your Area!
-//         </a>
-//         <p />
-//         <a href="https://instagram.com/blackpearlinyourarea/">
-//           <i className="fab fa-instagram" /> @blackpearlinyourarea
-//         </a>
-//         <p>
-//           <i className="fas fa-phone" />
-//           (+63) 918-627-3555
-//         </p>
-//         <a href="https://her.is/2smE9v2">
-//           <i className="fas fa-map-marker-alt" /> Blk 3 Lt 2, Mahogany Drive,
-//           Camella Homes, Seville, Habay 2. Imus, Cavite, Philippines.
-//         </a>
-//       </AdditionalInfoContent>
-//     </div>
-//   );
-// }
-
 function Testimonials() {
   return (
     <>
@@ -181,12 +168,26 @@ function Testimonials() {
   );
 }
 
+function Footer() {
+  return (
+    <FooterCard className="hero-footer">
+      <GitHub
+        href="https://github.com/jhdcruz/BlackPearl-website"
+        className="gh-redirect"
+      >
+        Copyright &copy; 2020 | BlackPearl in your Area!
+      </GitHub>
+    </FooterCard>
+  );
+}
+
 export default function About() {
   return (
     <>
       <ContainerCard />
       <BusinessCard />
       <Testimonials />
+      <Footer />
     </>
   );
 }

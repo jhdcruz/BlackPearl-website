@@ -5,7 +5,6 @@ import ReactDOM from "dependency/react-dom";
 // * Components Import
 import BgParticles from "components/bgParticles";
 import Wrapper from "pages/Wrapper";
-import Footer from "components/footer";
 import styled, { createGlobalStyle } from "styled-components";
 
 /*
@@ -74,7 +73,6 @@ ReactDOM.render(
     <GlobalStyle />
     <MainContent className="hero">
       <Wrapper />
-      <Footer />
     </MainContent>
   </>,
   document.getElementById("root")

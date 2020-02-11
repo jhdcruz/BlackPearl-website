@@ -4,6 +4,7 @@ import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 
 // * Components Import
 import MenuTable from "components/menuTable";
+import Footer from "components/footer";
 
 /*
  * ===================
@@ -70,11 +71,14 @@ const MediaQuery = createGlobalStyle`
 
 export default function Menu() {
   return (
-    <ContentWrapper className="hero-body mobile-container">
-      <MediaQuery />
-      <Tables className="mobile">
-        <MenuTable />
-      </Tables>
-    </ContentWrapper>
+    <>
+      <ContentWrapper className="hero-body mobile-container">
+        <MediaQuery />
+        <Tables className="mobile">
+          <MenuTable />
+        </Tables>
+      </ContentWrapper>
+      <Footer />
+    </>
   );
 }
