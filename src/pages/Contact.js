@@ -121,6 +121,19 @@ const Button = styled.button`
   }
 `;
 
+const Line = styled.hr`
+  display: block;
+  background: -webkit-gradient(
+    radial,
+    50% 50%,
+    0,
+    50% 50%,
+    550,
+    from(#ff80a2),
+    to(rgba(40, 40, 40, 0.3))
+  );
+`;
+
 // * Sender's Info
 function UserInfo() {
   return (
@@ -261,6 +274,7 @@ export default function Contact() {
     <ContactForm className="container BgCard">
       <Title>More Questions?</Title>
       <SubTitle>Feel free to contact us!</SubTitle>
+      <Line />
       {/* Action refers to contact email holder by pageclip */}
       <Form className="contact-form" method="post">
         <GlobalStyle />
