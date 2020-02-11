@@ -174,7 +174,7 @@ function Testimonials() {
     <>
       <div className="container CompanyCard TestimonialSection">
         <Label>Testimonials</Label>
-        <SubLabel>What others says about us...</SubLabel>
+        <SubLabel>What our customers says about us...</SubLabel>
         <TestimonialContent />
       </div>
     </>
