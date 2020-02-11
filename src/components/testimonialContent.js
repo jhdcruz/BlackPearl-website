@@ -61,7 +61,7 @@ const ReviewContent = styled.div`
   color: rgba(255, 128, 162, 1) !important;
   text-shadow: -1px 3px 2px #323232;
   padding: 0;
-  font-style: italic;
+  font-style: oblique;
 `;
 
 const ReviewDate = styled.h6`
