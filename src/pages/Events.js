@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import EventsCard from "components/EventsCard";
+import EventsCard from "components/eventsCard";
 
 const Notice = styled.p`
   color: rgba(255, 128, 162, 1) !important;
