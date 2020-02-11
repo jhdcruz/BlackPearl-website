@@ -104,6 +104,7 @@ export default function Nav() {
           <PageLink page="/menu" theme="navbar-item" name="Menu" />
           <PageLink page="/events" theme="navbar-item" name="Events" />
           <PageLink page="/about" theme="navbar-item" name="About" />
+          <PageLink page="/contact" theme="navbar-item" name="Contact" />
         </div>
       </NavEnd>
     </NavBar>

@@ -7,11 +7,12 @@ import "dependency/bulma/css/bulma.min.css";
 // * Components Import
 import Nav from "../components/nav";
 
-// * Layouts Import
+// * Pages Import
 import Intro from "./Home";
 import Menu from "./Menu";
 import Events from "./Events";
 import About from "./About";
+import Contact from "./Contact";
 
 /*
  * ===================
@@ -85,6 +86,7 @@ function Router() {
         <Route path="/menu" component={Menu} />
         <Route path="/events" component={Events} />
         <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
       </AnimatedSwitch>
     </div>
   );
