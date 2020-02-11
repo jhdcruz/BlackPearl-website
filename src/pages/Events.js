@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import EventsCard from "components/eventsCard";
+import Footer from "components/footer";
 
 const Notice = styled.p`
   color: rgba(255, 128, 162, 1) !important;
@@ -17,8 +18,11 @@ const Notice = styled.p`
 export default function Events() {
   return (
     <>
-      <Notice>Upcoming Promos & Events</Notice>
-      <EventsCard />
+      <>
+        <Notice>Upcoming Promos & Events</Notice>
+        <EventsCard />
+      </>
+      <Footer />
     </>
   );
 }

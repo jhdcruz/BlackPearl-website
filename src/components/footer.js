@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const FooterBar = styled.footer`
-  margin-top: 20%;
+  margin-top: 16%;
   background-color: rgba(40, 40, 40, 0.85) !important;
   box-shadow: 0 0 6px deeppink;
   padding: 1rem 10% !important;
@@ -27,7 +27,7 @@ const WebBrand = styled.div`
   font-size: 1.3rem;
   color: rgba(255, 128, 162, 1);
   text-align: center;
-  margin-top: 3.1rem;
+  margin-top: 3.5rem;
 
   a {
     text-align: center;
@@ -60,7 +60,7 @@ const GitHub = styled.a`
   text-shadow: 0 0 6px #323232;
   text-align: center;
   width: max-content;
-  margin: 0 auto 5px auto;
+  margin: 10px auto 5px auto;
 
   :hover {
     text-decoration: none;
@@ -118,13 +118,13 @@ export default function Footer() {
               <PageLink page="/about" theme="navbar-item" name="About" />
               <PageLink page="/contact" theme="navbar-item" name="Contact" />
             </div>
+            <GitHub
+              href="https://github.com/jhdcruz/BlackPearl-website"
+              className="gh-redirect"
+            >
+              Copyright &copy; 2020 | BlackPearl in your Area!
+            </GitHub>
           </WebBrand>
-          <GitHub
-            href="https://github.com/jhdcruz/BlackPearl-website"
-            className="gh-redirect"
-          >
-            Copyright &copy; 2020 | BlackPearl in your Area!
-          </GitHub>
         </div>
         <div className="column">
           <div className="container">

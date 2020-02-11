@@ -5,6 +5,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 import PageLink from "components/pageLink";
 import Success from "./Success";
+import Footer from "components/footer";
 
 const GlobalStyle = createGlobalStyle`
   .BgCard {
@@ -283,19 +284,22 @@ function Submit() {
 
 export default function Contact() {
   return (
-    <ContactForm className="container BgCard">
-      <Title>More Questions?</Title>
-      <SubTitle>Feel free to contact us!</SubTitle>
-      <Line />
-      {/* Action refers to contact email holder by pageclip */}
-      <Form className="contact-form">
-        <GlobalStyle />
-        <UserInfo />
-        <ContactPurpose />
-        <Subject />
-        <MessageContent />
-        <Submit />
-      </Form>
-    </ContactForm>
+    <>
+      <ContactForm className="container BgCard">
+        <Title>More Questions?</Title>
+        <SubTitle>Feel free to contact us!</SubTitle>
+        <Line />
+        {/* Action refers to contact email holder by pageclip */}
+        <Form className="contact-form">
+          <GlobalStyle />
+          <UserInfo />
+          <ContactPurpose />
+          <Subject />
+          <MessageContent />
+          <Submit />
+        </Form>
+      </ContactForm>
+      <Footer />
+    </>
   );
 }
