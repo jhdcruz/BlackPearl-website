@@ -21,12 +21,12 @@ const ContentWrapper = styled.div`
 `;
 
 const Title = styled.h3`
-  color: rgba(47, 47, 47, 0.95);
-  text-shadow: 0 0 6px rgba(255, 118, 162, 1);
+  color: rgba(38, 38, 38, 0.95);
+  text-shadow: 0 0 6px rgba(255, 118, 162, 0.8);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 61px;
-  margin-top: calc(25% - 7rem);
+  font-size: 4.5rem;
+  margin-top: 15%;
   line-height: 1.1;
 `;
 
@@ -45,6 +45,7 @@ const ButtonGroup = styled.div`
   margin: 0 auto;
 
   a.button {
+    margin: 5px;
     background-color: rgba(50, 50, 50, 0.9);
     border: 1px solid rgba(255, 128, 162, 1);
     border-radius: 30px;
@@ -65,7 +66,8 @@ const ButtonGroup = styled.div`
 const MediaQuery = createGlobalStyle`
   @media screen and (max-width: 720px) {
     h3 {
-      font-size: 45px !important;
+      font-size: 3.3rem !important;
+      margin-top: 8% !important;
     }
 
     h6 {
@@ -107,6 +109,12 @@ export default function Home() {
             theme="button is-outlined"
             name="Our Menu"
             icon="far fa-list-alt"
+          />
+          <PageLink
+            page="/events"
+            theme="button is-outlined"
+            name="Promos & Events"
+            icon="fas fa-calendar-alt"
           />
           <PageLink
             page="/about"
