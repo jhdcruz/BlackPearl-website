@@ -137,7 +137,7 @@ function BusinessCard() {
           toppers to choose from.
         </Story>
       </div>
-      {/*<AdditionalInfo />*/}
+      {/* <AdditionalInfo /> */}
     </div>
   );
 }
