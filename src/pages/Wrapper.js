@@ -13,6 +13,7 @@ import Menu from "./Menu";
 import Events from "./Events";
 import About from "./About";
 import Contact from "./Contact";
+import FormSuccess from "./Success";
 
 /*
  * ===================
@@ -87,6 +88,7 @@ function Router() {
         <Route path="/events" component={Events} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/success" component={FormSuccess} />
       </AnimatedSwitch>
     </div>
   );

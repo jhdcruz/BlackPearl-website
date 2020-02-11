@@ -1,6 +1,10 @@
 import React from "react";
+import { Route } from "react-router-dom";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import styled, { createGlobalStyle } from "styled-components";
+
+import PageLink from "components/pageLink";
+import Success from "./Success";
 
 const GlobalStyle = createGlobalStyle`
   .BgCard {
@@ -31,6 +35,10 @@ const GlobalStyle = createGlobalStyle`
     }
     option {
       color: #000 !important;
+    }
+
+    .select:not(.is-multiple):not(.is-loading)::after {
+      border-color: deeppink !important;
     }
   }
 
@@ -113,6 +121,11 @@ const Button = styled.button`
   color: rgba(255, 128, 162, 0.9) !important;
   border-color: white !important;
   background-color: rgba(0, 0, 0, 0.5) !important;
+  font-weight: bold;
+
+  i {
+    color: #f4f4f4;
+  }
 
   .is-hovered,
   :hover {
@@ -257,10 +270,9 @@ function Submit() {
       <div className="field-body">
         <div className="field">
           <div className="control submitControl">
-            <Button className="button is-outlined" type="submit" value="Send">
-              <span>
-                <i className="fas fa-paper-plane" /> Submit
-              </span>
+            <Button className="button is-outlined">
+              <i className="fas fa-paper-plane" />
+              <span>Submit</span>
             </Button>
           </div>
         </div>
@@ -276,7 +288,7 @@ export default function Contact() {
       <SubTitle>Feel free to contact us!</SubTitle>
       <Line />
       {/* Action refers to contact email holder by pageclip */}
-      <Form className="contact-form" method="post">
+      <Form className="contact-form">
         <GlobalStyle />
         <UserInfo />
         <ContactPurpose />
