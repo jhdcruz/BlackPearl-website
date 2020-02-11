@@ -8,7 +8,9 @@ import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 
 // * Layouts Import
 import Menu from "./Menu";
+import Events from "./Events";
 import About from "./About";
+import Contact from "./Contact";
 
 /*
  * ===================
@@ -122,6 +124,12 @@ export default function Home() {
             name="Our Story"
             icon="fas fa-user-friends"
           />
+          <PageLink
+            page="/about"
+            theme="button is-outlined"
+            name="Contact us"
+            icon="fas fa-envelope"
+          />
         </ButtonGroup>
       </div>
 
@@ -129,6 +137,8 @@ export default function Home() {
       <div className="mainContent">
         <Route path="/menu" component={Menu} />
         <Route path="/about" component={About} />
+        <Route path="/events" component={Events} />
+        <Route path="/contact" component={Contact} />
       </div>
     </ContentWrapper>
   );

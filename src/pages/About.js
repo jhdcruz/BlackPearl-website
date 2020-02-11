@@ -42,7 +42,7 @@ const ContainerCard = createGlobalStyle`
     border-radius: 8px;
     padding: 20px 10px !important;
     vertical-align: middle;
-    margin: 70px auto !important;
+    margin: 70px auto 40px auto !important;
     height: max-content !important;
   }
 
@@ -102,6 +102,7 @@ const Story = styled.h6`
 
 const Label = styled.h3`
   line-height: 1;
+  margin-top: 20px;
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -112,6 +113,7 @@ const SubLabel = styled.h6`
   font-size: 1.2rem;
   text-align: center;
   text-shadow: -1px 3px 2px #323232;
+  margin-bottom: 20px;
 `;
 
 function BusinessCard() {
@@ -172,7 +174,7 @@ function Testimonials() {
     <>
       <div className="container CompanyCard TestimonialSection">
         <Label>Testimonials</Label>
-        <SubLabel>What others says about us</SubLabel>
+        <SubLabel>What others says about us...</SubLabel>
         <TestimonialContent />
       </div>
     </>

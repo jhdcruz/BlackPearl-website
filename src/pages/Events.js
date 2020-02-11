@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Notice = styled.h4`
+const Notice = styled.p`
   color: rgba(255, 128, 162, 1) !important;
   font-size: 3.2rem;
   font-weight: bold;
@@ -11,11 +11,6 @@ const Notice = styled.h4`
   margin: 14rem auto 0 auto;
   line-height: 1.1;
   display: block;
-
-  @media screen and (max-width: 720px) {
-    h4 {
-      font-size: 2rem;
-    }
 `;
 
 // TODO: Make-up Events | Must not be empty
