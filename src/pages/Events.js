@@ -18,7 +18,6 @@ const Notice = styled.h4`
     }
 `;
 
-
 // TODO: Make-up Events | Must not be empty
 export default function Events() {
   return <Notice>No Current Events...</Notice>;
