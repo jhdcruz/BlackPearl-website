@@ -11,6 +11,7 @@ Home of the Bubble Tea Shop in Bacoor, Cavite.
 **Pre-requisites:**
 
 - [npm 6+](https://nodejs.org/en/download/)
+- [node.js 13.1+](https://nodejs.org/en/download/current/)
 
 1.  Navigate to project root directory _(in terminal/bash)_
 2.  run `npm install` or `npm i` on a terminal/bash
