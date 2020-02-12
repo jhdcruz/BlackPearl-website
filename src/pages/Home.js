@@ -130,7 +130,7 @@ export default function Home() {
               icon="fas fa-user-friends"
             />
             <PageLink
-              page="/about"
+              page="/contact"
               theme="button is-outlined"
               name="Contact us"
               icon="fas fa-envelope"
