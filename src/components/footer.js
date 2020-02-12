@@ -66,6 +66,7 @@ const WebBrand = styled.div`
 
       :hover {
         background-color: rgba(30, 30, 30, 0.8);
+        border-radius: 8px;
       }
     }
   }
@@ -95,11 +96,16 @@ const AdditionalInfoContent = styled.div`
     font-size: 1.1rem;
     color: rgba(255, 128, 162, 1);
     margin: 6px auto;
+
+    :hover {
+      color: deeppink;
+    }
   }
 
   i {
+    font-size: 1.2rem;
     color: deeppink;
-    margin: 0 5px;
+    margin: 0 6px;
   }
 `;
 

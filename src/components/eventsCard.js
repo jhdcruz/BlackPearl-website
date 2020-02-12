@@ -10,12 +10,16 @@ const Card = styled.div`
   max-width: 30% !important;
   height: max-content;
 
+  .subtitle {
+    color: deeppink;
+  }
+
   .card-footer {
     border-color: rgba(255, 128, 162, 1);
   }
 
   p {
-    color: #ffc5e0;
+    color: #ffb5d0;
     border-color: rgba(255, 128, 162, 1) !important;
   }
 
