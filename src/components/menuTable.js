@@ -8,7 +8,7 @@ import styled from "styled-components";
  * ===================
  */
 const MilkteaTable = styled.div`
-  margin: 0 !important;
+  margin: 0 auto !important;
 `;
 
 const AddOnTable = styled.div`
@@ -26,7 +26,7 @@ const Caption = styled.h6`
   font-weight: 500;
   color: #ff4c93;
   border: 1px solid rgba(255, 115, 162, 0.9);
-  box-shadow: 0 0 5px rgba(255, 112, 162, 0.6);
+  box-shadow: 1px 2px 5px rgba(255, 112, 162, 0.6);
   background-color: rgba(50, 50, 50, 0.9);
   border-radius: 3px;
 `;

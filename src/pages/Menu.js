@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 
 // * Components Import
+import MenuCarousel from "components/menuCarousel";
 import MenuTable from "components/menuTable";
 import Footer from "components/footer";
 
@@ -16,13 +17,13 @@ const ContentWrapper = styled.div`
 `;
 
 const Tables = styled.div`
-  margin: 0 !important;
+  margin: 0 auto !important;
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
 
   table {
-    margin: 10px 5px !important;
+    margin: 10px 6px !important;
     background-color: rgba(50, 50, 50, 0.95);
     box-shadow: 4px 4px 5px rgba(255, 112, 162, 0.25);
   }
@@ -72,10 +73,11 @@ const MediaQuery = createGlobalStyle`
 export default function Menu() {
   return (
     <>
-      <ContentWrapper className="hero-body mobile-container">
+      <ContentWrapper className="columns hero-body mobile-container">
         <MediaQuery />
+        <MenuCarousel className="column" />
         <Tables className="mobile">
-          <MenuTable />
+          <MenuTable className="column" />
         </Tables>
       </ContentWrapper>
       <Footer />
