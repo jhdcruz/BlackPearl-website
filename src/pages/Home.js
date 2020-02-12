@@ -7,7 +7,6 @@ import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import PageLink from "components/pageLink";
 import Footer from "components/footer";
 
-
 // * Layouts Import
 import Menu from "./Menu";
 import Events from "./Events";
@@ -99,52 +98,52 @@ function SubIntro() {
 
 export default function Home() {
   return (
-  <>
-    <ContentWrapper className="hero-body">
-      {/* Mobile Styles */}
-      <MediaQuery />
+    <>
+      <ContentWrapper className="hero-body">
+        {/* Mobile Styles */}
+        <MediaQuery />
 
-      {/* Main Content */}
-      <div className="container">
-        <Intro />
-        <SubIntro />
-        <ButtonGroup className="field is-grouped">
-          <PageLink
-            page="/menu"
-            theme="button is-outlined"
-            name="Our Menu"
-            icon="far fa-list-alt"
-          />
-          <PageLink
-            page="/events"
-            theme="button is-outlined"
-            name="Promos & Events"
-            icon="fas fa-calendar-alt"
-          />
-          <PageLink
-            page="/about"
-            theme="button is-outlined"
-            name="About Us"
-            icon="fas fa-user-friends"
-          />
-          <PageLink
-            page="/about"
-            theme="button is-outlined"
-            name="Contact us"
-            icon="fas fa-envelope"
-          />
-        </ButtonGroup>
-      </div>
+        {/* Main Content */}
+        <div className="container">
+          <Intro />
+          <SubIntro />
+          <ButtonGroup className="field is-grouped">
+            <PageLink
+              page="/menu"
+              theme="button is-outlined"
+              name="Our Menu"
+              icon="far fa-list-alt"
+            />
+            <PageLink
+              page="/events"
+              theme="button is-outlined"
+              name="Promos & Events"
+              icon="fas fa-calendar-alt"
+            />
+            <PageLink
+              page="/about"
+              theme="button is-outlined"
+              name="About Us"
+              icon="fas fa-user-friends"
+            />
+            <PageLink
+              page="/about"
+              theme="button is-outlined"
+              name="Contact us"
+              icon="fas fa-envelope"
+            />
+          </ButtonGroup>
+        </div>
 
-      {/* Button Redirects/Routes */}
-      <div className="mainContent">
-        <Route path="/menu" component={Menu} />
-        <Route path="/about" component={About} />
-        <Route path="/events" component={Events} />
-        <Route path="/contact" component={Contact} />
-      </div>
-    </ContentWrapper>
-    <Footer />
+        {/* Button Redirects/Routes */}
+        <div className="mainContent">
+          <Route path="/menu" component={Menu} />
+          <Route path="/about" component={About} />
+          <Route path="/events" component={Events} />
+          <Route path="/contact" component={Contact} />
+        </div>
+      </ContentWrapper>
+      <Footer />
     </>
   );
 }
