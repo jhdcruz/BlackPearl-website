@@ -27,6 +27,7 @@ const RouterWrapper = createGlobalStyle`
 
   .routerContent > div {
     position: absolute;
+    display: block !important;
     width: 100%;
   }
 `;

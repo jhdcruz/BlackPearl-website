@@ -131,7 +131,11 @@ const Button = styled.button`
   .is-hovered,
   :hover {
     border-color: deeppink !important;
-    color: rgba(255, 128, 162, 0.9) !important;
+    color: deeppink !important;
+
+    i {
+      color: rgba(255, 128, 162, 0.9);
+    }
   }
 `;
 

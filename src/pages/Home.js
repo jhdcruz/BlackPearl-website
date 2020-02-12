@@ -19,7 +19,7 @@ import Contact from "./Contact";
  * ===================
  */
 const ContentWrapper = styled.div`
-  margin: 17.4vh auto;
+  margin: 12% auto 15% auto;
   text-align: center;
 
   @media screen and (max-width: 720px) {
@@ -33,7 +33,6 @@ const Title = styled.h3`
   font-weight: bold;
   text-transform: uppercase;
   font-size: 4.5rem;
-  margin-top: 15%;
   line-height: 1.1;
 `;
 

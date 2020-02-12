@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const FooterBar = styled.footer`
-  margin-top: 14%;
+  margin-top: 8.5%;
   background-color: rgba(40, 40, 40, 0.85) !important;
   box-shadow: 0 0 6px deeppink;
   padding: 0.6rem 10% 0.8rem 10% !important;
