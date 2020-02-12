@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 8px;
     padding: 20px 10px !important;
     vertical-align: middle;
-    margin: 35px auto !important;
+    margin: 10px auto !important;
     height: max-content !important;
   }
 
@@ -91,13 +91,13 @@ const Form = styled.form`
 
 const Title = styled.h2`
   color: rgba(255, 128, 162, 1);
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   text-align: center;
   line-height: 0.9;
 `;
 
 const SubTitle = styled.h5`
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: rgba(255, 128, 162, 1);
   text-align: center;
 `;

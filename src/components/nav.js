@@ -22,6 +22,17 @@ const NavBar = styled.nav`
     background-color: transparent;
     background-image: none;
   }
+
+  .is-active {
+    background: rgba(40, 40, 40, 0.85);
+    text-align: center;
+
+    a {
+      margin: 3px;
+      display: inline-block;
+      width: max-content;
+    }
+  }
 `;
 
 const WebBrand = styled.div`

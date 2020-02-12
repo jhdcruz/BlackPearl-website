@@ -10,7 +10,7 @@ const Notice = styled.p`
   text-align: center;
   text-transform: uppercase;
   text-shadow: -1px 3px 3px #222;
-  margin: 2.5rem auto;
+  margin: 1.5rem auto 2rem auto;
   line-height: 1.1;
   display: block;
 `;

@@ -43,7 +43,7 @@ const ContainerCard = createGlobalStyle`
     border-radius: 8px;
     padding: 20px 10px !important;
     vertical-align: middle;
-    margin: 70px auto 30px auto !important;
+    margin: 15px auto 30px auto !important;
     height: max-content !important;
   }
 

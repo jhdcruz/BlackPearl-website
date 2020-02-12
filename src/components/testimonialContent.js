@@ -18,6 +18,12 @@ const Media = styled.div`
   figure {
     margin: 7px auto !important;
   }
+
+  @media screen and (max-width: 768px) {
+    .media-content {
+      overflow-x: visible !important;
+    }
+  }
 `;
 
 const Profile = styled.img`

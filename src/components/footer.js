@@ -11,23 +11,35 @@ import PageLink from "./pageLink";
  * ===================
  */
 const GlobalStyle = createGlobalStyle`
-  .column {
-  width: max-content;
+  .columns {
+    height: max-content;
   }
 `;
 
 const FooterBar = styled.footer`
-  margin-top: 16%;
+  margin-top: 14%;
   background-color: rgba(40, 40, 40, 0.85) !important;
   box-shadow: 0 0 6px deeppink;
-  padding: 1rem 10% !important;
+  padding: 0.6rem 10% 0.8rem 10% !important;
+
+  @media screen and (max-width: 720px) {
+    padding: 0.8rem 10px;
+
+    .addInfo {
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 const WebBrand = styled.div`
   font-size: 1.3rem !important;
   color: rgba(255, 128, 162, 1);
   text-align: center;
-  margin-top: 3.5rem;
+  margin: 3rem auto 0 auto;
 
   a {
     text-align: center;
@@ -41,7 +53,7 @@ const WebBrand = styled.div`
   .footer-routes {
     i,
     .fas {
-      display: hidden !important;
+      display: none !important;
     }
 
     a {
@@ -60,12 +72,13 @@ const WebBrand = styled.div`
 `;
 
 const GitHub = styled.a`
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  padding: 5px;
   color: rgba(255, 115, 162, 0.85);
   text-shadow: 0 0 6px #323232;
-  text-align: center;
   width: max-content;
-  margin: 10px auto 5px auto;
+  margin: 0 auto 7px auto;
+  display: block;
 
   :hover {
     text-decoration: none;
@@ -75,7 +88,7 @@ const GitHub = styled.a`
 `;
 
 const AdditionalInfoContent = styled.div`
-  margin: 9% auto !important;
+  margin: 2.5rem auto !important;
 
   a,
   p {
@@ -109,6 +122,13 @@ const Contact = styled.h4`
 export default function Footer() {
   return (
     <FooterBar className="hero-footer">
+      <GlobalStyle />
+      <GitHub
+        href="https://github.com/jhdcruz/BlackPearl-website"
+        className="gh-redirect"
+      >
+        Copyright &copy; 2020 | BlackPearl in your Area!
+      </GitHub>
       <div className="columns">
         <div className="column">
           <WebBrand className="container">
@@ -127,17 +147,11 @@ export default function Footer() {
               <PageLink page="/about" theme="navbar-item" name="About" />
               <PageLink page="/contact" theme="navbar-item" name="Contact" />
             </div>
-            <GitHub
-              href="https://github.com/jhdcruz/BlackPearl-website"
-              className="gh-redirect"
-            >
-              Copyright &copy; 2020 | BlackPearl in your Area!
-            </GitHub>
           </WebBrand>
         </div>
         <div className="column">
           <div className="container">
-            <AdditionalInfoContent>
+            <AdditionalInfoContent className="addInfo">
               <Contact>Contact Information:</Contact>
               <a href="https://facebook.com/BlackPearl-in-your-area-419571681980696/">
                 <i className="fab fa-facebook-square" /> BlackPearl in your

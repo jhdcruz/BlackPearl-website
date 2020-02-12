@@ -21,6 +21,10 @@ import Contact from "./Contact";
 const ContentWrapper = styled.div`
   margin: 17.4vh auto;
   text-align: center;
+
+  @media screen and (max-width: 720px) {
+    margin: 4vh auto 10vh auto;
+  }
 `;
 
 const Title = styled.h3`
