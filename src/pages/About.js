@@ -4,6 +4,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 // Component Imports
 import TestimonialContent from "components/testimonialContent";
+import Footer from "components/footer";
 
 // Asset Import
 import Brand from "images/brand.svg";
@@ -105,29 +106,6 @@ const SubLabel = styled.h6`
   margin-bottom: 20px;
 `;
 
-const FooterCard = styled.footer`
-  background-color: rgba(30, 30, 30, 0.8);
-  width: max-content;
-  padding: 2px 15px;
-  border-radius: 8px;
-  margin: 10px auto;
-  border: 1px solid #ff80a2;
-`;
-
-const GitHub = styled.a`
-  font-size: 12.5px;
-  color: rgba(255, 115, 162, 0.85);
-  text-shadow: 0 0 6px #323232;
-  text-align: center;
-  margin: 0 auto 5px auto;
-
-  :hover {
-    text-decoration: none;
-    color: deeppink;
-    cursor: help;
-  }
-`;
-
 function BusinessCard() {
   return (
     <div>
@@ -165,19 +143,6 @@ function Testimonials() {
         <TestimonialContent />
       </div>
     </>
-  );
-}
-
-function Footer() {
-  return (
-    <FooterCard className="hero-footer">
-      <GitHub
-        href="https://github.com/jhdcruz/BlackPearl-website"
-        className="gh-redirect"
-      >
-        Copyright &copy; 2020 | BlackPearl in your Area!
-      </GitHub>
-    </FooterCard>
   );
 }
 

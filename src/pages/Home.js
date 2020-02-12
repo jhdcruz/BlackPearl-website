@@ -1,10 +1,12 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import styled, { createGlobalStyle } from "styled-components";
+import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 
 // * Component Imports
 import PageLink from "components/pageLink";
-import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
+import Footer from "components/footer";
+
 
 // * Layouts Import
 import Menu from "./Menu";
@@ -34,7 +36,7 @@ const Title = styled.h3`
 
 const Subtitle = styled.h6`
   color: rgba(255, 128, 162, 1) !important;
-  text-shadow: -1px 3px 2px #323232;
+  text-shadow: -1px 3px 3px #222;
   font-weight: 600 !important;
   font-size: 1.3rem !important;
   margin: 4.5px 0 16px 0;
@@ -97,6 +99,7 @@ function SubIntro() {
 
 export default function Home() {
   return (
+  <>
     <ContentWrapper className="hero-body">
       {/* Mobile Styles */}
       <MediaQuery />
@@ -121,7 +124,7 @@ export default function Home() {
           <PageLink
             page="/about"
             theme="button is-outlined"
-            name="Our Story"
+            name="About Us"
             icon="fas fa-user-friends"
           />
           <PageLink
@@ -141,5 +144,7 @@ export default function Home() {
         <Route path="/contact" component={Contact} />
       </div>
     </ContentWrapper>
+    <Footer />
+    </>
   );
 }

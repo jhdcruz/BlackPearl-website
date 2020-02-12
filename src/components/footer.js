@@ -24,7 +24,7 @@ const FooterBar = styled.footer`
 `;
 
 const WebBrand = styled.div`
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
   color: rgba(255, 128, 162, 1);
   text-align: center;
   margin-top: 3.5rem;
@@ -43,9 +43,9 @@ const WebBrand = styled.div`
       color: deeppink;
       text-align: center !important;
       margin: 7px auto !important;
-      width: max-content;
-      display: inline-block;
-      font-style: oblique;
+      width: max-content !important;
+      display: inline-block !important;
+      font-style: oblique !important;
 
       :hover {
         background-color: rgba(30, 30, 30, 0.8);
@@ -83,6 +83,10 @@ const AdditionalInfoContent = styled.div`
     color: deeppink;
     margin: 0 5px;
   }
+`;
+
+const Space = styled.br`
+  margin: 6px auto;
 `;
 
 const Contact = styled.h4`
@@ -134,13 +138,13 @@ export default function Footer() {
                 <i className="fab fa-facebook-square" /> BlackPearl in your
                 Area!
               </a>
-              <p />
+              <Space />
               <a href="https://instagram.com/blackpearlinyourarea/">
                 <i className="fab fa-instagram" /> @blackpearlinyourarea
               </a>
               <p>
                 <i className="fas fa-phone" />
-                (+63) 918-627-3555
+                (+63) 918-627-3555 <span>(Jay Camagong)</span>
               </p>
               <a href="https://her.is/2smE9v2">
                 <i className="fas fa-map-marker-alt" /> Blk 3 Lt 2, Mahogany

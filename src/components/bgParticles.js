@@ -13,11 +13,11 @@ import { createGlobalStyle } from "styled-components";
 const ParticlesBg = createGlobalStyle`
   canvas,
   .particle-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100% !important;
-    height: 100% !important;
+    max-height: 100% !important;
     opacity: 0.85;
     overflow: hidden !important;
     z-index: 0;
