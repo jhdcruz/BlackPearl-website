@@ -39,10 +39,15 @@ const WebBrand = styled.div`
   }
 
   .footer-routes {
+    i,
+    .fas {
+      display: hidden !important;
+    }
+
     a {
       color: deeppink;
       text-align: center !important;
-      margin: 7px auto !important;
+      margin: 7px 0 !important;
       width: max-content !important;
       display: inline-block !important;
       font-style: oblique !important;
