@@ -174,7 +174,7 @@ export default function Footer() {
               <a href="https://her.is/2smE9v2">
                 <i className="fas fa-map-marker-alt" /> Blk 3 Lt 2, Mahogany
                 Drive, Camella Homes, Seville, Habay 2. Imus, Cavite,
-                Philippines.
+                Philippines. 4:00AM - 12:00MN daily.
               </a>
             </AdditionalInfoContent>
           </div>

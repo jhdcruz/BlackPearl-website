@@ -116,7 +116,7 @@ const Notice = styled.h6`
   margin: 5px 0 0 0;
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   margin: 0;
   padding: 7px 15px !important;
   color: rgba(255, 128, 162, 0.9) !important;
@@ -275,7 +275,7 @@ function Submit() {
       <div className="field-body">
         <div className="field">
           <div className="control submitControl">
-            <Button className="button is-outlined">
+            <Button href="#/success" className="button is-outlined">
               <i className="fas fa-paper-plane" />
               <span>Submit</span>
             </Button>

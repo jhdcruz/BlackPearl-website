@@ -126,7 +126,7 @@ function BusinessCard() {
           </strong>{" "}
           Serving refreshing drinks and scrumptious foot at great value for your
           money. With a great variety of milk and fruitteas, snacks, and rice
-          toppers to choose from.
+          toppers to choose from. Operating hours is from <strong>4:00pm</strong> to <strong>12:00am</strong> everyday.
         </Story>
       </div>
       {/* <AdditionalInfo /> */}

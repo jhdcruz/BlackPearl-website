@@ -72,7 +72,8 @@ const NavEnd = styled.div`
       color: #ff80a2 !important;
     }
 
-    &.active {
+    &.active,
+    &.visited {
       color: #ff80a2;
     }
   }

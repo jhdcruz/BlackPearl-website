@@ -9,6 +9,11 @@ import styled from "styled-components";
  */
 const MilkteaTable = styled.div`
   margin: 0 auto 0 4rem !important;
+
+  @media screen and (max-width: 720px) {
+    margin: 0 !important;
+    padding: 25px !important;
+  }
 `;
 
 const AddOnTable = styled.div`

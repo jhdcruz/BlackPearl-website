@@ -35,7 +35,8 @@ const StyledCarousel = styled(Carousel)`
     border-radius: 8px;
     min-height: auto;
     max-height: 580px !important;
-    box-shadow: 15px 3px 8px rgba(255, 128, 162, 0.8);
+    box-shadow: 3px 3px 5px rgba(255, 128, 162, 0.8);
+    border: 2px outset rgba(255, 128, 162, 0.8);
 
     img {
       image-rendering: optimizeQuality;
