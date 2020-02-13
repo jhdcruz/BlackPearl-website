@@ -40,6 +40,7 @@ Home of the Bubble Tea Shop in Bacoor, Cavite.
 **Tools:**
 
 - **`TravisCI`** - Continuous Integration & Testing
+- **`ZEIT Now`** - Continuous Deployment to Registered Domain
 - **`WhiteSource Bolt`** - Dependencies Vulnerability Watcher
 - **`Renovate`** - Dependencies Updates
 
