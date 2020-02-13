@@ -20,12 +20,11 @@ const Tables = styled.div`
   margin: 0 auto !important;
   display: flex;
   justify-content: center;
-  flex-direction: row-reverse;
 
   table {
     margin: 10px 6px !important;
     background-color: rgba(50, 50, 50, 0.95);
-    box-shadow: 4px 4px 5px rgba(255, 112, 162, 0.25);
+    box-shadow: -4px 4px 5px rgba(255, 112, 162, 0.25);
   }
 
   th,
@@ -75,10 +74,11 @@ export default function Menu() {
     <>
       <ContentWrapper className="columns hero-body mobile-container">
         <MediaQuery />
-        <MenuCarousel className="column" />
+        {/* TODO: Adjust column gaps */}
         <Tables className="mobile">
           <MenuTable className="column" />
         </Tables>
+        <MenuCarousel className="column" />
       </ContentWrapper>
       <Footer />
     </>

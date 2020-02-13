@@ -35,7 +35,7 @@ const StyledCarousel = styled(Carousel)`
     border-radius: 8px;
     min-height: auto;
     max-height: 600px !important;
-    box-shadow: -3px 2px 5px rgba(255, 128, 162, 0.8);
+    box-shadow: 3px 2px 5px rgba(255, 128, 162, 0.8);
 
     img {
       image-rendering: optimizeQuality;
@@ -62,67 +62,67 @@ export default function MenuCarousel() {
       >
         <div>
           <img src={img1} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img2} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img3} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Coolers</p> */}
         </div>
         <div>
           <img src={img4} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img5} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img6} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img7} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img8} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img9} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img10} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img11} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img12} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img13} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img14} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img15} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={img16} alt="" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </div>
       </StyledCarousel>
     </>
