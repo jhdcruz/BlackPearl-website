@@ -18,6 +18,10 @@ const NavBar = styled.nav`
   background-color: rgba(40, 40, 40, 0.85) !important;
   box-shadow: 0 0 6px deeppink;
 
+  .navbar-burger {
+    color: #ff80a2 !important;
+  }
+
   &.is-transparent {
     background-color: transparent;
     background-image: none;
@@ -31,6 +35,15 @@ const NavBar = styled.nav`
       margin: 3px;
       display: inline-block;
       width: max-content;
+
+      :hover {
+        background-color: rgba(0, 0, 0, 0.85) !important;
+        border-radius: 8px;
+      }
+
+      :visited {
+        background-color: rgba(20, 20, 20, 0.85) !important;
+      }
     }
   }
 `;
