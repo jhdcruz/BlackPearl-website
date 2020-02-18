@@ -65,7 +65,29 @@ const WebBrand = styled.div`
       font-style: oblique !important;
 
       :hover {
-        background-color: rgba(30, 30, 30, 0.8);
+        background-color: rgba(30, 30, 30, 0.5);
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .legal {
+    i,
+    .fas {
+      display: none !important;
+    }
+
+    a {
+      font-size: 0.9rem;
+      color: rgba(255, 115, 162, 0.85);
+      text-align: center !important;
+      margin: 8px 0 !important;
+      width: max-content !important;
+      display: inline-block !important;
+
+      :hover {
+        background-color: transparent;
+        text-decoration: underline;
         border-radius: 8px;
       }
     }
@@ -109,6 +131,20 @@ const AdditionalInfoContent = styled.div`
   }
 `;
 
+const Line = styled.hr`
+  display: block;
+  margin: 5px auto;
+  background: -webkit-gradient(
+    radial,
+    50% 50%,
+    0,
+    50% 50%,
+    230,
+    from(#ff80a2),
+    to(rgba(40, 40, 40, 0.3))
+  );
+`;
+
 const Space = styled.br`
   margin: 6px auto;
 `;
@@ -146,12 +182,26 @@ export default function Footer() {
             <br />
             <span>In Your Area!</span>
             {/* Pages Link/Route */}
+            {/*<Line />*/}
             <div className="footer-routes">
               <PageLink page="/" theme="navbar-item" name="Home" />
               <PageLink page="/menu" theme="navbar-item" name="Menu" />
               <PageLink page="/events" theme="navbar-item" name="Events" />
               <PageLink page="/about" theme="navbar-item" name="About" />
               <PageLink page="/contact" theme="navbar-item" name="Contact" />
+            </div>
+            {/*<Line />*/}
+            <div className="legal">
+              <PageLink
+                page="/terms"
+                theme="navbar-item"
+                name="Terms and Conditions"
+              />
+              <PageLink
+                page="/privacy"
+                theme="navbar-item"
+                name="Privacy Policy"
+              />
             </div>
           </WebBrand>
         </div>

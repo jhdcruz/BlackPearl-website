@@ -13,6 +13,8 @@ import Menu from "./Menu";
 import Events from "./Events";
 import About from "./About";
 import Contact from "./Contact";
+import Terms from "./legal/Terms";
+import Policy from "./legal/Policy";
 import FormSuccess from "./Success";
 
 /*
@@ -90,6 +92,8 @@ function Router() {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/success" component={FormSuccess} />
+        <Route path="/terms" component={Terms} />
+        <Route path="/policy" component={Policy} />
       </AnimatedSwitch>
     </div>
   );
