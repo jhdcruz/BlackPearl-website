@@ -30,8 +30,8 @@ const Note = styled.h3`
 export default function FormSuccess() {
   return (
     <FormSubmit>
-      <Notice>Form Submitted</Notice>
-      <Note>Typical replies of 2-3 weekdays.</Note>
+      <Notice>Form Submitted.</Notice>
+      <Note>We will contact you as soon as possible.</Note>
     </FormSubmit>
   );
 }
