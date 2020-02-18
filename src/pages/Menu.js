@@ -74,7 +74,6 @@ export default function Menu() {
     <>
       <ContentWrapper className="columns hero-body mobile-container">
         <MediaQuery />
-        {/* TODO: Adjust column gaps */}
         <Tables className="mobile">
           <MenuTable className="column" />
         </Tables>
