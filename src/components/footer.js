@@ -182,7 +182,7 @@ export default function Footer() {
             <br />
             <span>In Your Area!</span>
             {/* Pages Link/Route */}
-            {/*<Line />*/}
+            {/* <Line /> */}
             <div className="footer-routes">
               <PageLink page="/" theme="navbar-item" name="Home" />
               <PageLink page="/menu" theme="navbar-item" name="Menu" />
@@ -190,7 +190,7 @@ export default function Footer() {
               <PageLink page="/about" theme="navbar-item" name="About" />
               <PageLink page="/contact" theme="navbar-item" name="Contact" />
             </div>
-            {/*<Line />*/}
+            {/* <Line /> */}
             <div className="legal">
               <PageLink
                 page="/terms"
