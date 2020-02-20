@@ -39,6 +39,17 @@ module.exports = merge(common, {
           rel: "stylesheet",
           href:
             "https://fonts.googleapis.com/css?family=Kanit:400,500,600&display=swap"
+        },
+        {
+          rel: "stylesheet",
+          href: "https://s.pageclip.co/v1/pageclip.css",
+          media: "screen"
+        }
+      ],
+      scripts: [
+        {
+          src: "https://s.pageclip.co/v1/pageclip.js",
+          charset: "utf-8"
         }
       ],
       inlineManifestWebpackName: "webpackManifest"

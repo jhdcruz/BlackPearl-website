@@ -1,10 +1,8 @@
 import React from "react";
-import { Route } from "react-router-dom";
 import "dependency/@fortawesome/fontawesome-free/css/all.min.css";
 import styled, { createGlobalStyle } from "styled-components";
 
-import PageLink from "components/pageLink";
-import Success from "./Success";
+// import Success from "./Success";
 import Footer from "components/footer";
 
 const GlobalStyle = createGlobalStyle`
@@ -112,11 +110,11 @@ const Label = styled.div`
 const Notice = styled.h6`
   color: #ff4c93;
   text-shadow: -1px 1px 2px #323232;
-  font-size: 12.4px;
+  font-size: 0.88rem;
   margin: 5px 0 0 0;
 `;
 
-const Button = styled.a`
+const Button = styled.button`
   margin: 0;
   padding: 7px 15px !important;
   color: rgba(255, 128, 162, 0.9) !important;
@@ -155,45 +153,72 @@ const Line = styled.hr`
 // * Sender's Info
 function UserInfo() {
   return (
-    <div className="field is-horizontal">
-      <div className="field-label is-normal">
-        <Label className="label">From</Label>
-      </div>
-      <div className="field-body">
-        <div className="field">
-          <p className="control is-expanded has-icons-left">
-            <input
-              className="input"
-              type="text"
-              placeholder="Juan Thuthree"
-              required
-            />
-            <span className="icon is-small is-left">
-              <i className="fas fa-user" />
-            </span>
-          </p>
+    <>
+      <div className="field is-horizontal">
+        <div className="field-label is-normal">
+          <Label className="label">From</Label>
         </div>
-        <div className="field">
-          <p className="control is-expanded has-icons-left has-icons-right">
-            <input
-              className="input"
-              type="email"
-              name="email"
-              autoComplete="new-password"
-              placeholder="juan.thuthree45@gmail.com"
-              required
-            />
-            <span className="icon is-small is-left">
-              <i className="fas fa-envelope" />
-            </span>
-          </p>
+        <div className="field-body">
+          <div className="field">
+            <p className="control is-expanded has-icons-left">
+              <input
+                className="input"
+                type="text"
+                name="firstname"
+                autoComplete="new-password"
+                placeholder="First Name"
+                minLength="2"
+                required
+              />
+              <span className="icon is-small is-left">
+                <i className="fas fa-user" />
+              </span>
+            </p>
+          </div>
+          <div className="field">
+            <p className="control is-expanded">
+              <input
+                className="input"
+                type="text"
+                name="lastname"
+                autoComplete="new-password"
+                placeholder="Last Name"
+                minLength="2"
+                required
+              />
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* User Email */}
+      <div className="field is-horizontal">
+        <div className="field-label is-normal">
+          <Label className="label">Email</Label>
+        </div>
+        <div className="field-body">
+          <div className="field">
+            <p className="control is-expanded has-icons-left has-icons-right">
+              <input
+                className="input"
+                type="email"
+                name="email"
+                autoComplete="new-password"
+                placeholder="username@provider.com"
+                required
+              />
+              <span className="icon is-small is-left">
+                <i className="fas fa-envelope" />
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
-// * Contact Category
+// * Category
 function ContactPurpose() {
   return (
     <div className="field is-horizontal">
@@ -205,10 +230,10 @@ function ContactPurpose() {
           <div className="control">
             <div className="select is-fullwidth">
               <select name="category" required>
-                <option>General</option>
-                <option>Feedback</option>
-                <option>Business</option>
-                <option>Technical</option>
+                <option value="GEN">General</option>
+                <option value="FDB">Feedback</option>
+                <option value="BUS">Business</option>
+                <option value="TEC">Technical</option>
               </select>
             </div>
           </div>
@@ -219,29 +244,29 @@ function ContactPurpose() {
 }
 
 // * Subject / Headline
-function Subject() {
-  return (
-    <div className="field is-horizontal">
-      <div className="field-label is-normal">
-        <Label className="label">Subject</Label>
-      </div>
-      <div className="field-body">
-        <div className="field">
-          <div className="control">
-            <input
-              className="input"
-              type="text"
-              name="subject"
-              autoComplete="new-password"
-              placeholder="e.g. I would like to suggest something..."
-              required
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+// function Subject() {
+//   return (
+//     <div className="field is-horizontal">
+//       <div className="field-label is-normal">
+//         <Label className="label">Subject</Label>
+//       </div>
+//       <div className="field-body">
+//         <div className="field">
+//           <div className="control">
+//             <input
+//               className="input"
+//               type="text"
+//               name="subject"
+//               autoComplete="new-password"
+//               placeholder="e.g. I would like to suggest something..."
+//               required
+//             />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 // * Message / Textarea
 function MessageContent() {
@@ -255,7 +280,8 @@ function MessageContent() {
           <div className="control">
             <textarea
               className="textarea"
-              name="message"
+              name="body"
+              type="text"
               placeholder="How can we help you?"
               required
             />
@@ -275,7 +301,13 @@ function Submit() {
       <div className="field-body">
         <div className="field">
           <div className="control submitControl">
-            <Button href="#/success" className="button is-outlined">
+            <Button
+              onSubmitCapture="#/success"
+              type="submit"
+              className="button is-outlined"
+              class="pageclip-form__submit"
+              value="Send"
+            >
               <i className="fas fa-paper-plane" />
               <span>Submit</span>
             </Button>
@@ -294,11 +326,16 @@ export default function Contact() {
         <SubTitle>Feel free to contact us!</SubTitle>
         <Line />
         {/* Action refers to contact email holder by pageclip */}
-        <Form className="contact-form">
+        <Form
+          className="contact-form"
+          action="https://send.pageclip.co/JZD6iGzQPMMrmy6xu1EaaeqSPjOwv9yE/Contact"
+          class="pageclip-form"
+          method="post"
+        >
           <GlobalStyle />
           <UserInfo />
           <ContactPurpose />
-          <Subject />
+          {/* <Subject /> */}
           <MessageContent />
           <Submit />
         </Form>
