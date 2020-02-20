@@ -1,6 +1,7 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
 import styled from "styled-components";
+import Footer from "components/footer";
 
 /*
  * ===================
@@ -22,13 +23,9 @@ export default function Terms() {
         of BlackPearl in your Area's Website.
       </p>{" "}
       <br />
-      <span style="text-transform: capitalize;">
-        {" "}
-        BlackPearl in your Area
-      </span>{" "}
-      is located at:
-      <br />
       <address>
+        BlackPearl in your Area is located at:
+        <br />
         Seville, Habay 2, Camella Homes Blk 3 Lt 5, Mahogany Drive, Bacoor{" "}
         <br />
         4102 - Cavite , Philippines
@@ -271,7 +268,7 @@ export default function Terms() {
         website are provided free of charge, we will not be liable for any loss
         or damage of any nature.
       </p>
-      <h2>Credit & Contact Information</h2>
+      <Footer />
     </>
   );
 }
