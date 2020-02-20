@@ -1,6 +1,6 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 /*
  * ===================
@@ -8,32 +8,117 @@ import styled from "styled-components";
  * ===================
  */
 
+const PrivacyLayout = createGlobalStyle`
+  .PrivacyPolicy {
+    margin: 0.8rem 11%;
+    padding: 2.5rem 8%;
+    color: whitesmoke;
+    background: rgba(20, 20, 20, 0.85);
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    line-height: 0.8;
+    text-shadow: -1px 3px 3px #222;
+    color: #ff6c93;
+  }
+
+  h2 {
+    margin: 10px 0;
+    font-size: 1.7rem;
+    color: #ff6c93;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 2;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    text-shadow: -1px 3px 3px #222;
+    color: #ffb5d0;
+  }
+
+  span {
+    font-size: 1.3rem;
+    color: #ffb5d0;
+  }
+
+  p {
+    color: #ffb5d0;
+    text-shadow: -1px 3px 3px #222;
+    text-align: justify;
+  }
+
+  a {
+    color: deeppink;
+
+    .weblink {
+      text-decoration: underline;
+    }
+
+    :hover {
+      color: inherit;
+    }
+  }
+
+  address {
+    font-size: 1.2rem;
+    color: deeppink;
+    line-height: 1.2;
+    font-style: oblique;
+    text-shadow: -1px 3px 3px #222;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+`;
+
+const Line = styled.hr`
+  display: block;
+  background: -webkit-gradient(
+    radial,
+    50% 50%,
+    0,
+    50% 50%,
+    580,
+    from(#ff80a2),
+    to(rgba(40, 40, 40, 0.3))
+  );
+`;
+
 /*
  * ===================
  * Component
  * ===================
  */
-export default function Policy() {
+export default function Privacy() {
   return (
-    <>
+    <div className="PrivacyPolicy">
+      <PrivacyLayout />
       <h1>Privacy Policy</h1>
       <h3>Your privacy is critically important to us.</h3>
-      BlackPearl in your Area is located at:
-      <br />
       <address>
-        BlackPearl in your Area
+        <a href="https://her.is/2smE9v2">
+          {/* <span>BlackPearl in your Area is located at:</span> */}
+          <br />
+          <i className="fas fa-map-marker-alt" /> BlackPearl in your Area
+          <br />
+          Seville, Habay 2, Camella Homes Blk 3 Lt 5, Mahogany Drive <br />
+          Bacoor 4102, Cavite, Philippines
+        </a>
         <br />
-        Seville, Habay 2, Camella Homes Blk 3 Lt 5, Mahogany Drive, Bacoor{" "}
-        <br />
-        4102 - Cavite , Philippines
-        <br />
-        09186273555{" "}
+        (+63) 918 627 3555
       </address>
+      <Line />
       <p>
         It is BlackPearl in your Area's policy to respect your privacy regarding
         any information we may collect while operating our website. This Privacy
         Policy applies to{" "}
-        <a href="https://blackpearl.now.sh">https://blackpearl.now.sh</a>{" "}
+        <a href="https://blackpearl.now.sh" className="weblink">
+          https://blackpearl.now.sh
+        </a>{" "}
         (hereinafter, "us", "we", or "https://blackpearl.now.sh"). We respect
         your privacy and are committed to protecting personally identifiable
         information you may provide us through the Website. We have adopted this
@@ -123,19 +208,18 @@ export default function Policy() {
         your Area, third parties or the public at large.
       </p>
       <p>
-        If you are a registered user of https://blackpearl.now.sh and have
-        supplied your email address, BlackPearl in your Area may occasionally
-        send you an email to tell you about new features, solicit your feedback,
-        or just keep you up to date with what's going on with BlackPearl in your
-        Area and our products. We primarily use our blog to communicate this
-        type of information, so we expect to keep this type of email to a
-        minimum. If you send us a request (for example via a support email or
-        via one of our feedback mechanisms), we reserve the right to publish it
-        in order to help us clarify or respond to your request or to help us
-        support other users. BlackPearl in your Area takes all measures
-        reasonably necessary to protect against the unauthorized access, use,
-        alteration or destruction of potentially personally-identifying and
-        personally-identifying information.
+        If you have supplied your email address, BlackPearl in your Area may
+        occasionally send you an email to tell you about new features, solicit
+        your feedback, or just keep you up to date with what's going on with
+        BlackPearl in your Area and our products. We primarily use our website
+        to communicate this type of information, so we expect to keep this type
+        of email to a minimum. If you send us a request (for example via our
+        feedback mechanism), we reserve the right to publish it in order to help
+        us clarify or respond to your request or to help us support other users.
+        BlackPearl in your Area takes all measures reasonably necessary to
+        protect against the unauthorized access, use, alteration or destruction
+        of potentially personally-identifying and personally-identifying
+        information.
       </p>
       <h2>Aggregated Statistics</h2>
       <p>
@@ -177,7 +261,6 @@ export default function Policy() {
         Your continued use of this site after any change in this Privacy Policy
         will constitute your acceptance of such change.
       </p>
-      <h2>Credit & Contact Information</h2>
-    </>
+    </div>
   );
 }
