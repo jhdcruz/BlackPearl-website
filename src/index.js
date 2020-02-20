@@ -15,7 +15,7 @@ import styled, { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   body,
   html {
-    height: 100%%;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
