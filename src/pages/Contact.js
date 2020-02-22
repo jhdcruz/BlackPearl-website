@@ -293,6 +293,14 @@ function MessageContent() {
   );
 }
 
+// Submission redirect
+function OnSubmit() {
+  e.preventDefault();
+
+  const Submission = document.querySelector(".pageclip-form__submit");
+  Submission.window.location.replace("/#/Success");
+}
+
 // * Submit Button
 function Submit() {
   return (
@@ -302,10 +310,9 @@ function Submit() {
         <div className="field">
           <div className="control submitControl">
             <Button
-              onSubmitCapture="#/success"
+              onSubmit="OnSubmit();"
               type="submit"
-              className="button is-outlined"
-              class="pageclip-form__submit"
+              className="button is-outlined pageclip-form__submit"
               value="Send"
             >
               <i className="fas fa-paper-plane" />
