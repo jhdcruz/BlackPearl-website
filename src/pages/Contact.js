@@ -298,7 +298,7 @@ function OnSubmit() {
   e.preventDefault();
 
   const Submission = document.querySelector(".pageclip-form__submit");
-  Submission.window.location.replace("/#/Success");
+  Submission.window.location.href = "/#/Success";
 }
 
 // * Submit Button
@@ -310,7 +310,7 @@ function Submit() {
         <div className="field">
           <div className="control submitControl">
             <Button
-              onSubmit="OnSubmit();"
+              onClick="OnSubmit();"
               type="submit"
               className="button is-outlined pageclip-form__submit"
               value="Send"
