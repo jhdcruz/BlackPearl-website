@@ -9,6 +9,86 @@ import Footer from "components/footer";
  * ===================
  */
 
+const TermsLayout = createGlobalStyle`
+  .PrivacyPolicy {
+    margin: 0.8rem 11%;
+    padding: 2.5rem 8%;
+    color: whitesmoke;
+    background: rgba(20, 20, 20, 0.85);
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    line-height: 0.8;
+    text-shadow: -1px 3px 3px #222;
+    color: #ff6c93;
+  }
+
+  h2 {
+    margin: 10px 0;
+    font-size: 1.7rem;
+    color: #ff6c93;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 2;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    text-shadow: -1px 3px 3px #222;
+    color: #ffb5d0;
+  }
+
+  span {
+    font-size: 1.3rem;
+    color: #ffb5d0;
+  }
+
+  p {
+    color: #ffb5d0;
+    text-shadow: -1px 3px 3px #222;
+    text-align: justify;
+  }
+
+  a {
+    color: deeppink;
+
+    .weblink {
+      text-decoration: underline;
+    }
+
+    :hover {
+      color: inherit;
+    }
+  }
+
+  address {
+    font-size: 1.2rem;
+    color: deeppink;
+    line-height: 1.2;
+    font-style: oblique;
+    text-shadow: -1px 3px 3px #222;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+`;
+
+const Line = styled.hr`
+  display: block;
+  background: -webkit-gradient(
+    radial,
+    50% 50%,
+    0,
+    50% 50%,
+    580,
+    from(#ff80a2),
+    to(rgba(40, 40, 40, 0.3))
+  );
+`;
+
 /*
  * ===================
  * Component
@@ -17,20 +97,26 @@ import Footer from "components/footer";
 export default function Terms() {
   return (
     <>
+      <TermsLayout />
       <h2>Terms and Conditions</h2>
       <p>
         These terms and conditions outline the rules and regulations for the use
         of BlackPearl in your Area's Website.
-      </p>{" "}
+      </p>
       <br />
       <address>
-        BlackPearl in your Area is located at:
+        <a href="https://her.is/2smE9v2">
+          {/* <span>BlackPearl in your Area is located at:</span> */}
+          <br />
+          <i className="fas fa-map-marker-alt" /> BlackPearl in your Area
+          <br />
+          Seville, Habay 2, Camella Homes Blk 3 Lt 5, Mahogany Drive <br />
+          Bacoor 4102, Cavite, Philippines
+        </a>
         <br />
-        Seville, Habay 2, Camella Homes Blk 3 Lt 5, Mahogany Drive, Bacoor{" "}
-        <br />
-        4102 - Cavite , Philippines
-        <br />
+        (+63) 918 627 3555
       </address>
+      <Line />
       <p>
         By accessing this website we assume you accept these terms and
         conditions in full. Do not continue to use BlackPearl in your Area's
