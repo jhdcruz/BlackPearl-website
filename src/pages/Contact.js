@@ -293,14 +293,6 @@ function MessageContent() {
   );
 }
 
-// Submission redirect
-function OnSubmit() {
-  e.preventDefault();
-
-  const Submission = document.querySelector(".pageclip-form__submit");
-  Submission.window.location.href = "/#/Success";
-}
-
 // * Submit Button
 function Submit() {
   return (
