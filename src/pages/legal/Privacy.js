@@ -1,7 +1,7 @@
 import React from "react";
 import "dependency/bulma/css/bulma.min.css";
 import styled, { createGlobalStyle } from "styled-components";
-import Footer from "components/Footer";
+import Footer from "components/footer";
 
 /*
  * ===================
