@@ -6,6 +6,14 @@ Home of the Bubble Tea Shop in Bacoor, Cavite.
 
 [![Build Status](https://travis-ci.com/jhdcruz/BlackPearl-website.svg?token=fiiouVpFksoACZRN1N2B&branch=master)](https://travis-ci.com/jhdcruz/BlackPearl-website) [![CodeFactor](https://www.codefactor.io/repository/github/jhdcruz/blackpearl-website/badge?s=7e5544986aaa83e6666d1f2fb79fb34e296fc487)](https://www.codefactor.io/repository/github/jhdcruz/blackpearl-website) [![time tracker](https://wakatime.com/badge/github/jhdcruz/BlackPearl-website.svg)](https://wakatime.com/badge/github/jhdcruz/BlackPearl-website)
 
+-----
+
+> To open project without dev essentials/locally:
+> Open project's `index.html` in the `public/` folder.
+
+-----
+
+
 ## Contributing
 
 **Pre-requisites:**
