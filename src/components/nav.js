@@ -16,7 +16,7 @@ import Branding from "images/brand.svg";
 const NavBar = styled.nav`
   margin-bottom: 30px;
   background-color: rgba(40, 40, 40, 0.85) !important;
-  box-shadow: 0 0 6px #FF869F;
+  box-shadow: 0 0 6px #ff869f;
 
   .navbar-burger {
     color: #ff869f !important;
