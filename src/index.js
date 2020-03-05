@@ -7,12 +7,26 @@ import BgParticles from "components/bgParticles";
 import Wrapper from "pages/Wrapper";
 import styled, { createGlobalStyle } from "styled-components";
 
+// Custom Fonts Import
+import Kanit from "./shared/fonts/Kanit/Kanit-Regular.ttf";
+import KaushanScript from "./shared/fonts/Kaushan_Script/KaushanScript-Regular.ttf";
+
 /*
  * ===================
  * Component Style
  * ===================
  */
 const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: "Kanit";
+  src: url(${Kanit}) format('truetype');
+}
+
+@font-face {
+  font-family: "Kaushan Script";
+  src: url(${KaushanScript}) format('truetype');
+}
+
   body,
   html {
     height: 100%;
@@ -46,12 +60,6 @@ const GlobalStyle = createGlobalStyle`
     svg {
       margin: auto 6px auto auto;
     }
-  }
-
-  .button.is-hovered,
-  .button:hover {
-    border-color: #3273dc;
-    color: #3273dc;
   }
 `;
 

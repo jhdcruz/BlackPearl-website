@@ -19,7 +19,7 @@ import Contact from "./Contact";
  * ===================
  */
 const ContentWrapper = styled.div`
-  margin: 12% auto 15% auto;
+  margin: 12% auto 13% auto;
   text-align: center;
 
   @media screen and (max-width: 720px) {
@@ -29,11 +29,11 @@ const ContentWrapper = styled.div`
 
 const Title = styled.h3`
   color: rgba(38, 38, 38, 0.95);
-  text-shadow: 0 0 6px rgba(255, 118, 162, 0.8);
+  text-shadow: 0 0 6px #ffa1c6;
   font-weight: bold;
-  text-transform: uppercase;
-  font-size: 4.5rem;
+  font-size: 6rem;
   line-height: 1.1;
+  font-family: "Kaushan Script", "Kanit", "Segoe UI", sans-serif;
 `;
 
 const Subtitle = styled.h6`

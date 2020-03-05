@@ -16,10 +16,10 @@ import Branding from "images/brand.svg";
 const NavBar = styled.nav`
   margin-bottom: 30px;
   background-color: rgba(40, 40, 40, 0.85) !important;
-  box-shadow: 0 0 6px deeppink;
+  box-shadow: 0 0 6px #FF869F;
 
   .navbar-burger {
-    color: #ff80a2 !important;
+    color: #ff869f !important;
   }
 
   &.is-transparent {
@@ -65,16 +65,16 @@ const NavEnd = styled.div`
   letter-spacing: 1.4px;
 
   .navbar-item {
-    color: #ff80a2;
-    text-shadow: 0 1px 9px #ff80a2;
+    color: #ffa1c6;
+    text-shadow: 0 1px 9px #ffa1c6;
 
     :hover {
-      color: #ff80a2 !important;
+      color: #ff869f !important;
     }
 
     &.active,
     &.visited {
-      color: #ff80a2;
+      color: #ffa1c6;
     }
   }
 `;

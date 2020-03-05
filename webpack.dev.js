@@ -34,8 +34,19 @@ module.exports = merge(common, {
         {
           rel: "preload",
           href:
+            "https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap",
+          as: "style"
+        },
+        {
+          rel: "preload",
+          href:
             "https://fonts.googleapis.com/css?family=Kanit:400,500,600&display=swap",
           as: "style"
+        },
+        {
+          rel: "stylesheet",
+          href:
+            "https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"
         },
         {
           rel: "stylesheet",
