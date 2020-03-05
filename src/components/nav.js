@@ -16,7 +16,7 @@ import Branding from "images/brand.svg";
 const NavBar = styled.nav`
   margin-bottom: 30px;
   background-color: rgba(40, 40, 40, 0.85) !important;
-  box-shadow: 0 0 6px #FF869F;
+  box-shadow: 0 0 6px #ffa1c6;
 
   .navbar-burger {
     color: #ff869f !important;
@@ -128,8 +128,8 @@ export default function Nav() {
           <PageLink page="/" theme="navbar-item" name="Home" />
           <PageLink page="/menu" theme="navbar-item" name="Menu" />
           <PageLink page="/events" theme="navbar-item" name="Events" />
-          <PageLink page="/about" theme="navbar-item" name="About" />
-          <PageLink page="/contact" theme="navbar-item" name="Contact" />
+          <PageLink page="/about" theme="navbar-item" name="About Us" />
+          <PageLink page="/contact" theme="navbar-item" name="Contact Us" />
         </div>
       </NavEnd>
     </NavBar>

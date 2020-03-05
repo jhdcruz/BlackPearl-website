@@ -37,12 +37,16 @@ const FooterBar = styled.footer`
 
 const WebBrand = styled.div`
   font-size: 1.3rem !important;
-  color: rgba(255, 128, 162, 1);
+  color: #ffa1c6;
   text-align: center;
   margin: 3rem auto 0 auto;
 
   a {
     text-align: center;
+  }
+
+  span {
+    font-family: "Kaushan Script", "Kanit", "Segoe UI", sans-serif;
   }
 
   .branding {
@@ -57,7 +61,7 @@ const WebBrand = styled.div`
     }
 
     a {
-      color: deeppink;
+      color: #ffa1c6;
       text-align: center !important;
       margin: 7px 0 !important;
       width: max-content !important;
@@ -79,7 +83,7 @@ const WebBrand = styled.div`
 
     a {
       font-size: 0.9rem;
-      color: rgba(255, 115, 162, 0.85);
+      color: rgba(255, 115, 162, 1);
       text-align: center !important;
       margin: 8px 0 !important;
       width: max-content !important;
@@ -97,7 +101,7 @@ const WebBrand = styled.div`
 const GitHub = styled.a`
   font-size: 0.8rem;
   padding: 5px;
-  color: rgba(255, 115, 162, 0.85);
+  color: #ffa1c6;
   text-shadow: 0 0 6px #323232;
   width: max-content;
   margin: 0 auto 7px auto;
@@ -116,7 +120,7 @@ const AdditionalInfoContent = styled.div`
   a,
   p {
     font-size: 1.1rem;
-    color: rgba(255, 128, 162, 1);
+    color: #ffa1c6 !important;
     margin: 6px auto;
 
     :hover {
@@ -126,7 +130,7 @@ const AdditionalInfoContent = styled.div`
 
   i {
     font-size: 1.2rem;
-    color: deeppink;
+    color: rgba(255, 115, 162, 1);
     margin: 0 6px;
   }
 `;

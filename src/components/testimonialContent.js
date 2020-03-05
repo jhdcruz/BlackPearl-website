@@ -33,7 +33,7 @@ const Profile = styled.img`
 `;
 
 const Recommendation = styled.p`
-  color: rgba(255, 128, 162, 1) !important;
+  color: #ffa1c6 !important;
   text-shadow: -1px 3px 2px #323232;
   text-align: center;
 
@@ -65,14 +65,14 @@ const Reviewer = styled.p`
 
 const ReviewContent = styled.div`
   font-family: "Segoe UI", "Kanit", sans-serif;
-  color: #ffb5d0 !important;
+  color: #ffa1c6 !important;
   text-shadow: -1px 3px 2px #323232;
   padding: 0;
   font-style: oblique;
 `;
 
 const ReviewDate = styled.h6`
-  color: #ff4c93 !important;
+  color: #ff6c93 !important;
   text-shadow: -1px 3px 2px #323232;
   margin: 10px auto auto auto;
 `;
@@ -85,7 +85,7 @@ const Line = styled.hr`
     0,
     50% 50%,
     580,
-    from(#ff80a2),
+    from(#ffa1c6),
     to(rgba(40, 40, 40, 0.3))
   );
 `;

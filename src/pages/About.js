@@ -60,6 +60,7 @@ const Branding = styled.div`
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
+  font-family: "Kaushan Script", "Kanit", "Segoe UI", sans-serif;
   user-select: none;
 
   img {
@@ -70,7 +71,6 @@ const Branding = styled.div`
 const CatchPhrase = styled.h2`
   font-size: 22px;
   text-align: center;
-  color: #ff6c93;
   font-weight: 600 !important;
   text-shadow: -1px 3px 2px #323232;
 `;
@@ -80,12 +80,12 @@ const Story = styled.h6`
   margin: 8px auto;
   font-size: 17px;
   text-indent: 3em;
-  color: #ff6c93;
+  color: #ffa1c6;
   text-shadow: -1px 3px 2px #323232;
   font-weight: 600 !important;
 
   strong {
-    color: #ff4c93;
+    color: #ff6c93;
     font-size: 18px;
   }
 `;
@@ -100,6 +100,7 @@ const Label = styled.h3`
 `;
 
 const SubLabel = styled.h6`
+  color: #ffa1c6;
   font-size: 1.2rem;
   text-align: center;
   text-shadow: -1px 3px 2px #323232;

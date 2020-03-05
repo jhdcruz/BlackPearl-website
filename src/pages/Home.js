@@ -37,8 +37,8 @@ const Title = styled.h3`
 `;
 
 const Subtitle = styled.h6`
-  color: rgba(255, 128, 162, 1) !important;
-  text-shadow: -1px 3px 3px #222;
+  color: #ffa1c6 !important;
+  text-shadow: -1px 1px 7px #222;
   font-weight: 600 !important;
   font-size: 1.3rem !important;
   margin: 4.5px 0 16px 0;
@@ -53,16 +53,16 @@ const ButtonGroup = styled.div`
   a.button {
     margin: 5px;
     background-color: rgba(50, 50, 50, 0.9);
-    border: 1px solid rgba(255, 128, 162, 1);
+    border: 1px solid #ffa1c6;
     border-radius: 30px;
-    color: rgba(255, 128, 162, 1);
+    color: #ffa1c6;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 15px;
-    box-shadow: 0 0 4px rgba(255, 128, 162, 1);
+    box-shadow: 0 0 4px #ffa1c6;
 
     :hover {
-      color: rgba(255, 128, 162, 0.9);
+      color: #ffa1c6;
       background-color: rgba(60, 60, 60, 0.95);
     }
   }
