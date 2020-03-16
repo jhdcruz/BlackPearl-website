@@ -28,7 +28,7 @@ const NavBar = styled.nav`
   }
 
   .is-active {
-    background: rgba(40, 40, 40, 0.85);
+    background-color: rgba(40, 40, 40, 0.6);
     text-align: center;
 
     a {

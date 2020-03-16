@@ -51,17 +51,15 @@ const Card = styled.div`
 
   button {
     font-size: 1rem;
-    color: deeppink;
+    color: #ffa1c6;
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-weight: bold;
 
     span {
-      color: #ffc5e0;
+      color: #ffa1c6 !important;
     }
-  }
-
   @media screen and (max-width: 720px) {
     max-width: 87% !important;
   }

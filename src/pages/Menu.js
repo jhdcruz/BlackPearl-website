@@ -29,7 +29,7 @@ const Tables = styled.div`
 
   th,
   tr {
-    color: rgba(255, 128, 162, 0.9) !important;
+    color: #ffa1c6 !important;
     border-color: rgba(255, 115, 162, 0.9) !important;
 
     :hover {
@@ -38,8 +38,12 @@ const Tables = styled.div`
   }
 
   td {
-    color: #ff4c93 !important;
+    color: #ffa1c6 !important;
     border-color: rgba(255, 115, 162, 0.9) !important;
+  }
+
+  .m-title {
+    color: deeppink !important;
   }
 `;
 

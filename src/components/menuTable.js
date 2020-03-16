@@ -51,17 +51,17 @@ function MilkteaMenu() {
       <table className="table is-bordered">
         <thead>
           <tr>
-            <th>MilkTea</th>
-            <th>
+            <th class="m-title">MilkTea</th>
+            <th class="m-title">
               <abbr title="Small">S</abbr>
             </th>
-            <th>
+            <th class="m-title">
               <abbr title="Medium">M</abbr>
             </th>
-            <th>
+            <th class="m-title">
               <abbr title="Large">L</abbr>
             </th>
-            <th>
+            <th class="m-title">
               <abbr title="Litre">Litre</abbr>
             </th>
           </tr>
@@ -90,8 +90,8 @@ function AddOn() {
       <table className="table is-bordered">
         <thead>
           <tr>
-            <th>Sinkers</th>
-            <th>
+            <th class="m-title">Sinkers</th>
+            <th class="m-title">
               <abbr title="Price">Price</abbr>
             </th>
           </tr>
@@ -109,11 +109,11 @@ function AddOn() {
       <table className="table is-bordered">
         <thead>
           <tr>
-            <th>Coolers</th>
-            <th>
+            <th class="m-title">Coolers</th>
+            <th class="m-title">
               <abbr title="Medium">M</abbr>
             </th>
-            <th>
+            <th class="m-title">
               <abbr title="Large">L</abbr>
             </th>
           </tr>
